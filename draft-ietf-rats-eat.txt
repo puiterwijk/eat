@@ -5,11 +5,11 @@
 RATS Working Group                                            G. Mandyam
 Internet-Draft                                Qualcomm Technologies Inc.
 Intended status: Standards Track                            L. Lundblade
-Expires: January 24, 2020                            Security Theory LLC
+Expires: April 3, 2020                               Security Theory LLC
                                                           M. Ballesteros
                                                            J. O'Donoghue
                                               Qualcomm Technologies Inc.
-                                                           July 23, 2019
+                                                        October 01, 2019
 
 
                    The Entity Attestation Token (EAT)
@@ -45,7 +45,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on January 24, 2020.
+   This Internet-Draft will expire on April 3, 2020.
 
 
 
@@ -53,9 +53,9 @@ Status of This Memo
 
 
 
-Mandyam, et al.         Expires January 24, 2020                [Page 1]
+Mandyam, et al.           Expires April 3, 2020                 [Page 1]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
 Copyright Notice
@@ -109,9 +109,9 @@ Table of Contents
 
 
 
-Mandyam, et al.         Expires January 24, 2020                [Page 2]
+Mandyam, et al.           Expires April 3, 2020                 [Page 2]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
      3.11. Nested EATs, the EAT Claim (nested_eat) . . . . . . . . .  15
@@ -165,9 +165,9 @@ Internet-Draft                     EAT                         July 2019
 
 
 
-Mandyam, et al.         Expires January 24, 2020                [Page 3]
+Mandyam, et al.           Expires April 3, 2020                 [Page 3]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
    might want to know that a device is trustworthy before allowing
@@ -221,9 +221,9 @@ Internet-Draft                     EAT                         July 2019
 
 
 
-Mandyam, et al.         Expires January 24, 2020                [Page 4]
+Mandyam, et al.           Expires April 3, 2020                 [Page 4]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
    distinct, isolated, and hosts security-oriented functionality like
@@ -277,9 +277,9 @@ Internet-Draft                     EAT                         July 2019
 
 
 
-Mandyam, et al.         Expires January 24, 2020                [Page 5]
+Mandyam, et al.           Expires April 3, 2020                 [Page 5]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
    o  The EAT is transmitted directly to a verification service, perhaps
@@ -333,9 +333,9 @@ Internet-Draft                     EAT                         July 2019
 
 
 
-Mandyam, et al.         Expires January 24, 2020                [Page 6]
+Mandyam, et al.           Expires April 3, 2020                 [Page 6]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
    similar but different.  The term "signing algorithm" refers just to
@@ -389,9 +389,9 @@ Internet-Draft                     EAT                         July 2019
 
 
 
-Mandyam, et al.         Expires January 24, 2020                [Page 7]
+Mandyam, et al.           Expires April 3, 2020                 [Page 7]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
 3.  The Claims Information Model
@@ -445,9 +445,9 @@ Internet-Draft                     EAT                         July 2019
 
 
 
-Mandyam, et al.         Expires January 24, 2020                [Page 8]
+Mandyam, et al.           Expires April 3, 2020                 [Page 8]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
    UEID's must be universally and globally unique across manufacturers
@@ -501,9 +501,9 @@ Internet-Draft                     EAT                         July 2019
 
 
 
-Mandyam, et al.         Expires January 24, 2020                [Page 9]
+Mandyam, et al.           Expires April 3, 2020                 [Page 9]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
    +------+--------+---------------------------------------------------+
@@ -557,9 +557,9 @@ Internet-Draft                     EAT                         July 2019
 
 
 
-Mandyam, et al.         Expires January 24, 2020               [Page 10]
+Mandyam, et al.           Expires April 3, 2020                [Page 10]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
    internal structure.  For example, they should not use the OUI part of
@@ -613,9 +613,9 @@ Internet-Draft                     EAT                         July 2019
 
 
 
-Mandyam, et al.         Expires January 24, 2020               [Page 11]
+Mandyam, et al.           Expires April 3, 2020                [Page 11]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
 3.4.1.  CDDL
@@ -669,9 +669,9 @@ Internet-Draft                     EAT                         July 2019
 
 
 
-Mandyam, et al.         Expires January 24, 2020               [Page 12]
+Mandyam, et al.           Expires April 3, 2020                [Page 12]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
    3 - Secure Restricted  Entities at this level must meet the criteria
@@ -725,9 +725,9 @@ Internet-Draft                     EAT                         July 2019
 
 
 
-Mandyam, et al.         Expires January 24, 2020               [Page 13]
+Mandyam, et al.           Expires April 3, 2020                [Page 13]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
 3.7.3.  Debug Disabled Since Boot
@@ -781,9 +781,9 @@ Internet-Draft                     EAT                         July 2019
 
 
 
-Mandyam, et al.         Expires January 24, 2020               [Page 14]
+Mandyam, et al.           Expires April 3, 2020                [Page 14]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
 3.8.1.  CDDL
@@ -837,9 +837,9 @@ Internet-Draft                     EAT                         July 2019
 
 
 
-Mandyam, et al.         Expires January 24, 2020               [Page 15]
+Mandyam, et al.           Expires April 3, 2020                [Page 15]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
 3.11.1.  CDDL
@@ -893,9 +893,9 @@ Internet-Draft                     EAT                         July 2019
 
 
 
-Mandyam, et al.         Expires January 24, 2020               [Page 16]
+Mandyam, et al.           Expires April 3, 2020                [Page 16]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
    submod_name_type = (
@@ -949,9 +949,9 @@ string_or_uri = #6.32(tstr) / tstr; See JSON section below for JSON encoding of 
 
 
 
-Mandyam, et al.         Expires January 24, 2020               [Page 17]
+Mandyam, et al.           Expires April 3, 2020                [Page 17]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
    cwt_claim = (
@@ -1005,9 +1005,9 @@ Internet-Draft                     EAT                         July 2019
 
 
 
-Mandyam, et al.         Expires January 24, 2020               [Page 18]
+Mandyam, et al.           Expires April 3, 2020                [Page 18]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
    ueid = "ueid"
@@ -1061,9 +1061,9 @@ Internet-Draft                     EAT                         July 2019
 
 
 
-Mandyam, et al.         Expires January 24, 2020               [Page 19]
+Mandyam, et al.           Expires April 3, 2020                [Page 19]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
    ueid = 8
@@ -1117,9 +1117,9 @@ Internet-Draft                     EAT                         July 2019
 
 
 
-Mandyam, et al.         Expires January 24, 2020               [Page 20]
+Mandyam, et al.           Expires April 3, 2020                [Page 20]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
       may also encode the lengths of strings in any way allowed by CBOR.
@@ -1173,9 +1173,9 @@ Internet-Draft                     EAT                         July 2019
 
 
 
-Mandyam, et al.         Expires January 24, 2020               [Page 21]
+Mandyam, et al.           Expires April 3, 2020                [Page 21]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
 eat_claims = {  ; the top-level payload that is signed using COSE or JOSE
@@ -1229,9 +1229,9 @@ claim = (
 
 
 
-Mandyam, et al.         Expires January 24, 2020               [Page 22]
+Mandyam, et al.           Expires April 3, 2020                [Page 22]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
 6.  Privacy Considerations
@@ -1250,7 +1250,7 @@ Internet-Draft                     EAT                         July 2019
    track the device.  Thus, in many usage situations ueid violates
    governmental privacy regulation.  In other usage situations UEID will
    not be allowed for certain products like browsers that give privacy
-   for the end user.  it will often be the case that tokens will not
+   for the end user.  It will often be the case that tokens will not
    have a UEID for these reasons.
 
    There are several strategies that can be used to still be able to put
@@ -1285,9 +1285,9 @@ Internet-Draft                     EAT                         July 2019
 
 
 
-Mandyam, et al.         Expires January 24, 2020               [Page 23]
+Mandyam, et al.           Expires April 3, 2020                [Page 23]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
 7.  Security Considerations
@@ -1341,9 +1341,9 @@ Internet-Draft                     EAT                         July 2019
 
 
 
-Mandyam, et al.         Expires January 24, 2020               [Page 24]
+Mandyam, et al.           Expires April 3, 2020                [Page 24]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
    [RFC8610]  Birkholz, H., Vigano, C., and C. Bormann, "Concise Data
@@ -1374,8 +1374,8 @@ Internet-Draft                     EAT                         July 2019
    [ECMAScript]
               "Ecma International, "ECMAScript Language Specification,
               5.1 Edition", ECMA Standard 262", June 2011,
-              <http://www.ecma-international.org/ecma-262/5.1/
-              ECMA-262.pdf>.
+              <http://www.ecma-international.org/ecma-262/5.1/ECMA-
+              262.pdf>.
 
    [IDevID]   "IEEE Standard, "IEEE 802.1AR Secure Device Identifier"",
               December 2009, <http://standards.ieee.org/findstds/
@@ -1397,9 +1397,9 @@ Internet-Draft                     EAT                         July 2019
 
 
 
-Mandyam, et al.         Expires January 24, 2020               [Page 25]
+Mandyam, et al.           Expires April 3, 2020                [Page 25]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
 Appendix A.  Examples
@@ -1453,9 +1453,9 @@ A.2.  Example with Submodules, Nesting and Security Levels
 
 
 
-Mandyam, et al.         Expires January 24, 2020               [Page 26]
+Mandyam, et al.           Expires April 3, 2020                [Page 26]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
 Appendix B.  Changes from Previous Drafts
@@ -1509,9 +1509,9 @@ Authors' Addresses
 
 
 
-Mandyam, et al.         Expires January 24, 2020               [Page 27]
+Mandyam, et al.           Expires April 3, 2020                [Page 27]
 
-Internet-Draft                     EAT                         July 2019
+Internet-Draft                     EAT                      October 2019
 
 
    Jeremy O'Donoghue
@@ -1565,4 +1565,4 @@ Internet-Draft                     EAT                         July 2019
 
 
 
-Mandyam, et al.         Expires January 24, 2020               [Page 28]
+Mandyam, et al.           Expires April 3, 2020                [Page 28]
