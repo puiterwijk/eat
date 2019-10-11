@@ -1,6 +1,335 @@
 [
 
   {
+    "url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/35",
+    "repository_url": "https://api.github.com/repos/ietf-rats-wg/eat",
+    "labels_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/35/labels{/name}",
+    "comments_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/35/comments",
+    "events_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/35/events",
+    "html_url": "https://github.com/ietf-rats-wg/eat/pull/35",
+    "id": 503223227,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzI1MTIwMzQ3",
+    "number": 35,
+    "title": "Up UEID to 256 bits and add design rational appendix",
+    "user": {
+      "login": "laurencelundblade",
+      "id": 7951515,
+      "node_id": "MDQ6VXNlcjc5NTE1MTU=",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/7951515?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/laurencelundblade",
+      "html_url": "https://github.com/laurencelundblade",
+      "followers_url": "https://api.github.com/users/laurencelundblade/followers",
+      "following_url": "https://api.github.com/users/laurencelundblade/following{/other_user}",
+      "gists_url": "https://api.github.com/users/laurencelundblade/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/laurencelundblade/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/laurencelundblade/subscriptions",
+      "organizations_url": "https://api.github.com/users/laurencelundblade/orgs",
+      "repos_url": "https://api.github.com/users/laurencelundblade/repos",
+      "events_url": "https://api.github.com/users/laurencelundblade/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/laurencelundblade/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-10-07T04:12:27Z",
+    "updated_at": "2019-10-07T17:27:01Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/ietf-rats-wg/eat/pulls/35",
+      "html_url": "https://github.com/ietf-rats-wg/eat/pull/35",
+      "diff_url": "https://github.com/ietf-rats-wg/eat/pull/35.diff",
+      "patch_url": "https://github.com/ietf-rats-wg/eat/pull/35.patch"
+    },
+    "body": "Comments on the analysis are very much requested. \r\n\r\nSee issue #12 and #21"
+  },
+  {
+    "url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/34",
+    "repository_url": "https://api.github.com/repos/ietf-rats-wg/eat",
+    "labels_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/34/labels{/name}",
+    "comments_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/34/comments",
+    "events_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/34/events",
+    "html_url": "https://github.com/ietf-rats-wg/eat/issues/34",
+    "id": 500951285,
+    "node_id": "MDU6SXNzdWU1MDA5NTEyODU=",
+    "number": 34,
+    "title": "Add boot seed claim",
+    "user": {
+      "login": "laurencelundblade",
+      "id": 7951515,
+      "node_id": "MDQ6VXNlcjc5NTE1MTU=",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/7951515?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/laurencelundblade",
+      "html_url": "https://github.com/laurencelundblade",
+      "followers_url": "https://api.github.com/users/laurencelundblade/followers",
+      "following_url": "https://api.github.com/users/laurencelundblade/following{/other_user}",
+      "gists_url": "https://api.github.com/users/laurencelundblade/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/laurencelundblade/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/laurencelundblade/subscriptions",
+      "organizations_url": "https://api.github.com/users/laurencelundblade/orgs",
+      "repos_url": "https://api.github.com/users/laurencelundblade/repos",
+      "events_url": "https://api.github.com/users/laurencelundblade/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/laurencelundblade/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "id": 1600568325,
+        "node_id": "MDU6TGFiZWwxNjAwNTY4MzI1",
+        "url": "https://api.github.com/repos/ietf-rats-wg/eat/labels/new%20claim",
+        "name": "new claim",
+        "color": "006b75",
+        "default": false
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-10-01T14:52:09Z",
+    "updated_at": "2019-10-07T13:48:20Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "body": "This is a random value that is generated each time the entity boots. \r\n\r\nhttps://tools.ietf.org/html/draft-tschofenig-rats-psa-token-02 defines this."
+  },
+  {
+    "url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/33",
+    "repository_url": "https://api.github.com/repos/ietf-rats-wg/eat",
+    "labels_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/33/labels{/name}",
+    "comments_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/33/comments",
+    "events_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/33/events",
+    "html_url": "https://github.com/ietf-rats-wg/eat/issues/33",
+    "id": 500949429,
+    "node_id": "MDU6SXNzdWU1MDA5NDk0Mjk=",
+    "number": 33,
+    "title": "HW Version claim",
+    "user": {
+      "login": "laurencelundblade",
+      "id": 7951515,
+      "node_id": "MDQ6VXNlcjc5NTE1MTU=",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/7951515?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/laurencelundblade",
+      "html_url": "https://github.com/laurencelundblade",
+      "followers_url": "https://api.github.com/users/laurencelundblade/followers",
+      "following_url": "https://api.github.com/users/laurencelundblade/following{/other_user}",
+      "gists_url": "https://api.github.com/users/laurencelundblade/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/laurencelundblade/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/laurencelundblade/subscriptions",
+      "organizations_url": "https://api.github.com/users/laurencelundblade/orgs",
+      "repos_url": "https://api.github.com/users/laurencelundblade/repos",
+      "events_url": "https://api.github.com/users/laurencelundblade/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/laurencelundblade/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "id": 1600568325,
+        "node_id": "MDU6TGFiZWwxNjAwNTY4MzI1",
+        "url": "https://api.github.com/repos/ietf-rats-wg/eat/labels/new%20claim",
+        "name": "new claim",
+        "color": "006b75",
+        "default": false
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-10-01T14:49:16Z",
+    "updated_at": "2019-10-07T13:50:48Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "body": "https://tools.ietf.org/html/draft-tschofenig-rats-psa-token-02 defines this in terms of EAN-13. This seems like a good thing to do."
+  },
+  {
+    "url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/32",
+    "repository_url": "https://api.github.com/repos/ietf-rats-wg/eat",
+    "labels_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/32/labels{/name}",
+    "comments_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/32/comments",
+    "events_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/32/events",
+    "html_url": "https://github.com/ietf-rats-wg/eat/issues/32",
+    "id": 500948609,
+    "node_id": "MDU6SXNzdWU1MDA5NDg2MDk=",
+    "number": 32,
+    "title": "Add claim to name profile used by the token",
+    "user": {
+      "login": "laurencelundblade",
+      "id": 7951515,
+      "node_id": "MDQ6VXNlcjc5NTE1MTU=",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/7951515?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/laurencelundblade",
+      "html_url": "https://github.com/laurencelundblade",
+      "followers_url": "https://api.github.com/users/laurencelundblade/followers",
+      "following_url": "https://api.github.com/users/laurencelundblade/following{/other_user}",
+      "gists_url": "https://api.github.com/users/laurencelundblade/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/laurencelundblade/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/laurencelundblade/subscriptions",
+      "organizations_url": "https://api.github.com/users/laurencelundblade/orgs",
+      "repos_url": "https://api.github.com/users/laurencelundblade/repos",
+      "events_url": "https://api.github.com/users/laurencelundblade/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/laurencelundblade/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "id": 1600568325,
+        "node_id": "MDU6TGFiZWwxNjAwNTY4MzI1",
+        "url": "https://api.github.com/repos/ietf-rats-wg/eat/labels/new%20claim",
+        "name": "new claim",
+        "color": "006b75",
+        "default": false
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2019-10-01T14:47:57Z",
+    "updated_at": "2019-10-07T13:48:51Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "body": "Profiles are very concrete, use case specific, documents that say which claims are mandatory and which are optional and other.  For example there might be a profile for payments, one for automotive, one for a specific IoT industry and such. This claim would name the profile in use for this token, perhaps with a reference to its defining document. \r\n\r\nThis is used in https://tools.ietf.org/html/draft-tschofenig-rats-psa-token-02"
+  },
+  {
+    "url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/31",
+    "repository_url": "https://api.github.com/repos/ietf-rats-wg/eat",
+    "labels_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/31/labels{/name}",
+    "comments_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/31/comments",
+    "events_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/31/events",
+    "html_url": "https://github.com/ietf-rats-wg/eat/issues/31",
+    "id": 500915608,
+    "node_id": "MDU6SXNzdWU1MDA5MTU2MDg=",
+    "number": 31,
+    "title": "Add a claim definition for SW measurement and/or integrity status",
+    "user": {
+      "login": "laurencelundblade",
+      "id": 7951515,
+      "node_id": "MDQ6VXNlcjc5NTE1MTU=",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/7951515?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/laurencelundblade",
+      "html_url": "https://github.com/laurencelundblade",
+      "followers_url": "https://api.github.com/users/laurencelundblade/followers",
+      "following_url": "https://api.github.com/users/laurencelundblade/following{/other_user}",
+      "gists_url": "https://api.github.com/users/laurencelundblade/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/laurencelundblade/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/laurencelundblade/subscriptions",
+      "organizations_url": "https://api.github.com/users/laurencelundblade/orgs",
+      "repos_url": "https://api.github.com/users/laurencelundblade/repos",
+      "events_url": "https://api.github.com/users/laurencelundblade/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/laurencelundblade/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "id": 1600568325,
+        "node_id": "MDU6TGFiZWwxNjAwNTY4MzI1",
+        "url": "https://api.github.com/repos/ietf-rats-wg/eat/labels/new%20claim",
+        "name": "new claim",
+        "color": "006b75",
+        "default": false
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-10-01T13:58:09Z",
+    "updated_at": "2019-10-07T13:49:02Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "body": "This claim would list measurements made on parts of the entity. Typically a measurement is a hash of some region. This may by SW component or it may be more of a run time integrity measuring memory images.\r\n\r\nFor TEE-based implementations, it is possible to evaluate the measurement on the device and only list the integrity status as a Boolean rather than a measurement. \r\n\r\nSee also issue #30 "
+  },
+  {
+    "url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/30",
+    "repository_url": "https://api.github.com/repos/ietf-rats-wg/eat",
+    "labels_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/30/labels{/name}",
+    "comments_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/30/comments",
+    "events_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/30/events",
+    "html_url": "https://github.com/ietf-rats-wg/eat/issues/30",
+    "id": 500912434,
+    "node_id": "MDU6SXNzdWU1MDA5MTI0MzQ=",
+    "number": 30,
+    "title": "Add a claim definition for SW inventory",
+    "user": {
+      "login": "laurencelundblade",
+      "id": 7951515,
+      "node_id": "MDQ6VXNlcjc5NTE1MTU=",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/7951515?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/laurencelundblade",
+      "html_url": "https://github.com/laurencelundblade",
+      "followers_url": "https://api.github.com/users/laurencelundblade/followers",
+      "following_url": "https://api.github.com/users/laurencelundblade/following{/other_user}",
+      "gists_url": "https://api.github.com/users/laurencelundblade/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/laurencelundblade/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/laurencelundblade/subscriptions",
+      "organizations_url": "https://api.github.com/users/laurencelundblade/orgs",
+      "repos_url": "https://api.github.com/users/laurencelundblade/repos",
+      "events_url": "https://api.github.com/users/laurencelundblade/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/laurencelundblade/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "id": 1600568325,
+        "node_id": "MDU6TGFiZWwxNjAwNTY4MzI1",
+        "url": "https://api.github.com/repos/ietf-rats-wg/eat/labels/new%20claim",
+        "name": "new claim",
+        "color": "006b75",
+        "default": false
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-10-01T13:53:31Z",
+    "updated_at": "2019-10-07T13:49:11Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "body": "The claim would list SW on the entity. It would probably include name the name and version of each SW component.  This is probably a complicated claim to define.\r\n\r\nSee also issue #31 \r\n\r\nThis might include a signer ID like https://tools.ietf.org/html/draft-tschofenig-rats-psa-token-02 does"
+  },
+  {
     "url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/29",
     "repository_url": "https://api.github.com/repos/ietf-rats-wg/eat",
     "labels_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/29/labels{/name}",
@@ -95,11 +424,11 @@
 
     ],
     "milestone": null,
-    "comments": 0,
+    "comments": 2,
     "created_at": "2019-08-12T21:41:55Z",
-    "updated_at": "2019-08-12T21:41:55Z",
+    "updated_at": "2019-10-07T04:25:28Z",
     "closed_at": null,
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "pull_request": {
       "url": "https://api.github.com/repos/ietf-rats-wg/eat/pulls/28",
       "html_url": "https://github.com/ietf-rats-wg/eat/pull/28",
@@ -140,7 +469,14 @@
       "site_admin": false
     },
     "labels": [
-
+      {
+        "id": 1595669794,
+        "node_id": "MDU6TGFiZWwxNTk1NjY5Nzk0",
+        "url": "https://api.github.com/repos/ietf-rats-wg/eat/labels/ready%20to%20close",
+        "name": "ready to close",
+        "color": "bfdadc",
+        "default": false
+      }
     ],
     "state": "open",
     "locked": false,
@@ -149,11 +485,11 @@
 
     ],
     "milestone": null,
-    "comments": 0,
+    "comments": 1,
     "created_at": "2019-08-08T00:37:34Z",
-    "updated_at": "2019-08-08T00:37:34Z",
+    "updated_at": "2019-10-04T16:21:32Z",
     "closed_at": null,
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "body": "2 reasons:\r\n\r\na) Neither RFC 8392 (CWT) nor RFC 7519 (JWT) have operational models.  Since EAT is derived from these specifications, it would be desirable to maintain consistency.\r\n\r\nb) This topic is better covered in an architecture specification. "
   },
   {
@@ -197,11 +533,11 @@
 
     ],
     "milestone": null,
-    "comments": 0,
+    "comments": 1,
     "created_at": "2019-08-08T00:29:46Z",
-    "updated_at": "2019-08-08T00:29:46Z",
+    "updated_at": "2019-10-04T16:42:48Z",
     "closed_at": null,
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "body": ""
   },
   {
@@ -245,11 +581,11 @@
 
     ],
     "milestone": null,
-    "comments": 0,
+    "comments": 1,
     "created_at": "2019-08-08T00:27:48Z",
-    "updated_at": "2019-08-08T00:27:48Z",
+    "updated_at": "2019-10-04T16:34:09Z",
     "closed_at": null,
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "body": "Sec.'s 3.7.3, 3.7.4 and 3.7.5 start out with the term \"this claim\".  These are actually not claims as per the definition in Sec. 3.7, but boolean values included in the boot_state claim.    "
   },
   {
@@ -293,9 +629,9 @@
 
     ],
     "milestone": null,
-    "comments": 1,
+    "comments": 2,
     "created_at": "2019-07-22T18:33:52Z",
-    "updated_at": "2019-07-23T13:50:34Z",
+    "updated_at": "2019-10-11T17:02:03Z",
     "closed_at": null,
     "author_association": "NONE",
     "body": "It isn't clear whether an key used for attestation is restricted to signing evidence that is controlled by a trusted environment. The risk of not having constraints is the key may be subject to a confused deputy attack where claims are presented as opaque data that then receive a signature and a verifier presumes the attester made the claims. \r\n\r\nShould it be mandatory for EAT claims to reside within the security perimeter of a trusted environment such as a TEEP TEE / TEEP Agent?"
@@ -332,7 +668,14 @@
       "site_admin": false
     },
     "labels": [
-
+      {
+        "id": 1595669794,
+        "node_id": "MDU6TGFiZWwxNTk1NjY5Nzk0",
+        "url": "https://api.github.com/repos/ietf-rats-wg/eat/labels/ready%20to%20close",
+        "name": "ready to close",
+        "color": "bfdadc",
+        "default": false
+      }
     ],
     "state": "open",
     "locked": false,
@@ -341,9 +684,9 @@
 
     ],
     "milestone": null,
-    "comments": 4,
+    "comments": 5,
     "created_at": "2019-07-22T17:49:50Z",
-    "updated_at": "2019-07-24T09:10:40Z",
+    "updated_at": "2019-10-04T16:18:50Z",
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "Current text:\r\n* All claims are optional\r\n* No claims are mandatory\r\n* All claims that are not understood by implementations MUST be ignored\r\n\r\n•Should profiles be allowed to override this?\r\n•Should there be text that says they can?\r\n•How does this relate to JWT/CWT optionality?"
@@ -389,11 +732,11 @@
 
     ],
     "milestone": null,
-    "comments": 0,
+    "comments": 1,
     "created_at": "2019-07-21T16:45:47Z",
-    "updated_at": "2019-07-21T16:45:47Z",
+    "updated_at": "2019-10-04T17:48:24Z",
     "closed_at": null,
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "body": "Sec. 2.2.2 of RFC 8610 allows for a choice expression based on a '/' delimiter between options.  In order to avoid expression of potentially conflicting debug disable states (e.g. debug full permanent disable being true while debug disabled since boot being false), this could be an alternative."
   },
   {
@@ -441,7 +784,7 @@
     "created_at": "2019-07-21T16:15:51Z",
     "updated_at": "2019-07-22T18:42:49Z",
     "closed_at": null,
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "body": "Current text (-01) does not state assumptions on rand generation that would be necessary to minimize the probability of collisions from different manufacturers.  This could be added to the Security Considerations section."
   },
   {
@@ -489,7 +832,7 @@
     "created_at": "2019-07-21T16:13:41Z",
     "updated_at": "2019-07-22T17:52:37Z",
     "closed_at": "2019-07-22T17:52:36Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "body": "They can be addressed in a -02 version.\r\n\r\nSec. 3:  Change \"\"It also mentions several claims defined by CWT and JWT are  particularly important for EAT.\" to 'that are particularly important'\r\n\r\nSec. 3:  Correct \"* All claims are optional * No claims are mandatory *.\"  Redundant.\r\n\r\nSec. 3.11:  \"Typically, one will be the device-wide EAT that is low to medium  security and another from a Secure Element or similar that is high security.”  Consider changing \"Typically\" to \"For example\".\r\n\r\nSec. 3.11:  \"The contents of the \"eat\" claim must be a fully signed, ...\".  \"eat\" claim should be \"nested_eat\" claim. "
   },
   {
@@ -524,7 +867,14 @@
       "site_admin": false
     },
     "labels": [
-
+      {
+        "id": 1595669794,
+        "node_id": "MDU6TGFiZWwxNTk1NjY5Nzk0",
+        "url": "https://api.github.com/repos/ietf-rats-wg/eat/labels/ready%20to%20close",
+        "name": "ready to close",
+        "color": "bfdadc",
+        "default": false
+      }
     ],
     "state": "open",
     "locked": false,
@@ -533,11 +883,11 @@
 
     ],
     "milestone": null,
-    "comments": 2,
+    "comments": 5,
     "created_at": "2019-07-19T20:29:19Z",
-    "updated_at": "2019-07-22T18:52:32Z",
+    "updated_at": "2019-10-04T16:20:09Z",
     "closed_at": null,
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "body": "As per https://mailarchive.ietf.org/arch/msg/rats/d4GYkpwEMmh0VjD3Gmjd1h82Wpc -\r\n\r\n> \"The EAT is always signed by the attestation key material provisioned by the manufacturer.\"\r\n>This seems to prevent nested_eat use cases (e.g., cloud workloads with container/VM entities) where the outer EAT is signed with an \"ephemeral\" attestation key associated with the instance that is itself attested by the inner EAT signed with the AKM.  I suggest removing the sentence. "
   },
   {
@@ -572,7 +922,14 @@
       "site_admin": false
     },
     "labels": [
-
+      {
+        "id": 1595669794,
+        "node_id": "MDU6TGFiZWwxNTk1NjY5Nzk0",
+        "url": "https://api.github.com/repos/ietf-rats-wg/eat/labels/ready%20to%20close",
+        "name": "ready to close",
+        "color": "bfdadc",
+        "default": false
+      }
     ],
     "state": "open",
     "locked": false,
@@ -581,11 +938,11 @@
 
     ],
     "milestone": null,
-    "comments": 6,
+    "comments": 9,
     "created_at": "2019-07-19T19:39:58Z",
-    "updated_at": "2019-08-08T00:39:06Z",
+    "updated_at": "2019-10-04T16:52:03Z",
     "closed_at": null,
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "body": "Guidance on verification procedures not covered in document.  It is touched upon in Sec. 1.3, but not to the level described in comparable specifications (see https://www.w3.org/TR/webauthn/#defined-attestation-formats)."
   },
   {
@@ -668,7 +1025,14 @@
       "site_admin": false
     },
     "labels": [
-
+      {
+        "id": 1595669794,
+        "node_id": "MDU6TGFiZWwxNTk1NjY5Nzk0",
+        "url": "https://api.github.com/repos/ietf-rats-wg/eat/labels/ready%20to%20close",
+        "name": "ready to close",
+        "color": "bfdadc",
+        "default": false
+      }
     ],
     "state": "open",
     "locked": false,
@@ -677,9 +1041,9 @@
 
     ],
     "milestone": null,
-    "comments": 1,
+    "comments": 9,
     "created_at": "2019-07-16T10:15:16Z",
-    "updated_at": "2019-07-22T19:12:23Z",
+    "updated_at": "2019-10-04T21:44:49Z",
     "closed_at": null,
     "author_association": "NONE",
     "body": "In section 1.2, it seems odd that the definition of the term \"entity\" is limited to things that implement this draft. The last sentence of this section and the definition of \"The Entity\" in section 1.3 bear this out. Generally, 'entity' is used pretty loosely throughout the draft."
@@ -869,9 +1233,9 @@
 
     ],
     "milestone": null,
-    "comments": 1,
+    "comments": 2,
     "created_at": "2019-07-03T20:12:32Z",
-    "updated_at": "2019-07-22T18:28:00Z",
+    "updated_at": "2019-10-07T04:18:23Z",
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "Ben commented that 128 bits is not enough. Is my analysis correct?\r\n\r\n128 bits (16 bytes) is enough for one trillion humans to each have one trillion devices and the probability of collision less than a trillion (log base 10 of 2^ 128 = 38; log base 10 of a trillion is 12; 3 * 12 < 38) So 128 bits seems like enough, but take it out to 256 bits because SHA-256 is popular and good and there is some extra margin."
@@ -975,7 +1339,7 @@
     "created_at": "2019-05-30T16:51:28Z",
     "updated_at": "2019-05-30T16:51:28Z",
     "closed_at": null,
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "body": "See https://mailarchive.ietf.org/arch/msg/rats/jBCYPK2hly554HGYTXZXa2t_AGw.\r\n\r\nFuture claims could be added that correspond directly to YANG objects (https://tools.ietf.org/html/rfc6020).  There should be guidance in the document as to how such objects can be reflected in the CWT claims registry.\r\n\r\nFor CBOR claims, this could be as simple as providing a reference to https://datatracker.ietf.org/doc/draft-ietf-core-yang-cbor/.  It should be confirmed whether https://tools.ietf.org/html/rfc7951 is sufficient to address future JWT claims."
   },
   {
@@ -1023,7 +1387,7 @@
     "created_at": "2019-05-30T16:45:01Z",
     "updated_at": "2019-07-24T20:48:19Z",
     "closed_at": "2019-07-24T20:48:18Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "body": "Section 5 contains guidance on the registration of EAT claims using the CWT registry.  There should be suggested guidance to the expert reviewers to avoid registration of claims intended to be used in EAT that will not achieve widespread adoption.\r\n\r\nSee https://mailarchive.ietf.org/arch/msg/rats/jBCYPK2hly554HGYTXZXa2t_AGw. "
   },
   {
@@ -1071,7 +1435,7 @@
     "created_at": "2019-04-17T02:00:14Z",
     "updated_at": "2019-04-17T02:00:56Z",
     "closed_at": "2019-04-17T02:00:56Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "pull_request": {
       "url": "https://api.github.com/repos/ietf-rats-wg/eat/pulls/8",
       "html_url": "https://github.com/ietf-rats-wg/eat/pull/8",
@@ -1187,7 +1551,10 @@
       "patch_url": "https://github.com/ietf-rats-wg/eat/pull/6.patch"
     },
     "body": ""
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/5",
     "repository_url": "https://api.github.com/repos/ietf-rats-wg/eat",
@@ -1322,7 +1689,14 @@
       "site_admin": false
     },
     "labels": [
-
+      {
+        "id": 1600568325,
+        "node_id": "MDU6TGFiZWwxNjAwNTY4MzI1",
+        "url": "https://api.github.com/repos/ietf-rats-wg/eat/labels/new%20claim",
+        "name": "new claim",
+        "color": "006b75",
+        "default": false
+      }
     ],
     "state": "open",
     "locked": false,
@@ -1333,7 +1707,7 @@
     "milestone": null,
     "comments": 2,
     "created_at": "2018-06-27T18:02:04Z",
-    "updated_at": "2019-07-22T18:12:37Z",
+    "updated_at": "2019-10-07T13:49:33Z",
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "(From David Wheeler)\r\n\r\nWhat seems to be missing from the proposed structure is the ability to attach new key material into the EAT structure, with an attestation claim. The attestation claim can be that it was generated on the device, or generated inside the TEE and bound/sealed to the TEE. And perhaps even a purpose for the key material. A new attestation key, for example; or a special signing/authorization key for a particular application.\r\n \r\nMany times, IMHO, it is useful to generate a new key that is attested in some way, and then future operations use that key. In fact, OTrP/TEEP has this implication, with the AIK keys for new installed Apps, but (IMO) it is not really that clearly spelled out, although I think the intention is clear.\r\n \r\nOther attestation claims are also useful – the identity and cryptographic hash of the code of a particular TEE application; a DH public key to establish an encrypted channel; the set of root CA’s this TEE will trust; …"
@@ -1370,7 +1744,14 @@
       "site_admin": false
     },
     "labels": [
-
+      {
+        "id": 1595669794,
+        "node_id": "MDU6TGFiZWwxNTk1NjY5Nzk0",
+        "url": "https://api.github.com/repos/ietf-rats-wg/eat/labels/ready%20to%20close",
+        "name": "ready to close",
+        "color": "bfdadc",
+        "default": false
+      }
     ],
     "state": "open",
     "locked": false,
@@ -1379,9 +1760,9 @@
 
     ],
     "milestone": null,
-    "comments": 1,
+    "comments": 2,
     "created_at": "2018-06-27T18:00:09Z",
-    "updated_at": "2019-07-22T18:05:57Z",
+    "updated_at": "2019-10-04T16:10:38Z",
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "Some comments so far in my reading (which is not yet complete):\r\n\r\n The Manufacturer.  The company that made the entity.  This may be a\r\n      chip vendor, a circuit board module vendor or a vendor of finished\r\n      consumer products.\r\n\r\nGiven that it may be three (or more) entities, and they each have different\r\nagendas, I think that it might be worth being specific about each level.\r\n\r\n  In this case the manufacturer should\r\n  perform the verification, because any release of the key material\r\n  would enable a participant other than the entity to create valid\r\n  signed EATs.\r\n\r\ns/manufacturer should/manufacturer MUST/"
@@ -1431,7 +1812,7 @@
     "created_at": "2018-06-27T02:31:36Z",
     "updated_at": "2018-06-27T17:55:36Z",
     "closed_at": "2018-06-27T17:55:36Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "pull_request": {
       "url": "https://api.github.com/repos/ietf-rats-wg/eat/pulls/1",
       "html_url": "https://github.com/ietf-rats-wg/eat/pull/1",
