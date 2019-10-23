@@ -1,6 +1,60 @@
 [
 
   {
+    "url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/41",
+    "repository_url": "https://api.github.com/repos/ietf-rats-wg/eat",
+    "labels_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/41/labels{/name}",
+    "comments_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/41/comments",
+    "events_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/41/events",
+    "html_url": "https://github.com/ietf-rats-wg/eat/pull/41",
+    "id": 508662075,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0MzI5NDEzMzYx",
+    "number": 41,
+    "title": "OEMID clarifications and references",
+    "user": {
+      "login": "laurencelundblade",
+      "id": 7951515,
+      "node_id": "MDQ6VXNlcjc5NTE1MTU=",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/7951515?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/laurencelundblade",
+      "html_url": "https://github.com/laurencelundblade",
+      "followers_url": "https://api.github.com/users/laurencelundblade/followers",
+      "following_url": "https://api.github.com/users/laurencelundblade/following{/other_user}",
+      "gists_url": "https://api.github.com/users/laurencelundblade/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/laurencelundblade/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/laurencelundblade/subscriptions",
+      "organizations_url": "https://api.github.com/users/laurencelundblade/orgs",
+      "repos_url": "https://api.github.com/users/laurencelundblade/repos",
+      "events_url": "https://api.github.com/users/laurencelundblade/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/laurencelundblade/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2019-10-17T18:59:42Z",
+    "updated_at": "2019-10-17T18:59:42Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/ietf-rats-wg/eat/pulls/41",
+      "html_url": "https://github.com/ietf-rats-wg/eat/pull/41",
+      "diff_url": "https://github.com/ietf-rats-wg/eat/pull/41.diff",
+      "patch_url": "https://github.com/ietf-rats-wg/eat/pull/41.patch"
+    },
+    "body": "Corrected text and references to match up to the IEEE documents and specs.\r\n\r\nDefines new encoding type, hex_bstr, that encodes to bstr in CBOR for compactness and hexadecimal text in JSON for readability.\r\n\r\nThis is to address #38"
+  },
+  {
     "url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/40",
     "repository_url": "https://api.github.com/repos/ietf-rats-wg/eat",
     "labels_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/40/labels{/name}",
@@ -287,9 +341,9 @@
 
     ],
     "milestone": null,
-    "comments": 1,
+    "comments": 2,
     "created_at": "2019-10-07T04:12:27Z",
-    "updated_at": "2019-10-07T17:27:01Z",
+    "updated_at": "2019-10-21T12:45:53Z",
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "pull_request": {
@@ -1485,7 +1539,10 @@
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "Ben commented that 128 bits is not enough. Is my analysis correct?\r\n\r\n128 bits (16 bytes) is enough for one trillion humans to each have one trillion devices and the probability of collision less than a trillion (log base 10 of 2^ 128 = 38; log base 10 of a trillion is 12; 3 * 12 < 38) So 128 bits seems like enough, but take it out to 256 bits because SHA-256 is popular and good and there is some extra margin."
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/11",
     "repository_url": "https://api.github.com/repos/ietf-rats-wg/eat",
@@ -1539,10 +1596,7 @@
       "patch_url": "https://github.com/ietf-rats-wg/eat/pull/11.patch"
     },
     "body": "Big rearrangement:\r\n- separate information and data model using CDDL\r\n- say an EAT is a CWT or JWT\r\n\r\nNo new claims or any substantive change to any claim.\r\n\r\nI believe I have largely succeeded in using CDDL for the information model and\r\ndefining later how it translates to the CWT and JWT data models.  It seems like\r\nthis is what CDDL is for, but others don't seem to be using it this way (yet). Being \r\nnew to CDDL and attempting what others seem to have not, I may have made some errors since I have no example to follow.\r\n\r\n"
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/10",
     "repository_url": "https://api.github.com/repos/ietf-rats-wg/eat",
@@ -1584,9 +1638,9 @@
 
     ],
     "milestone": null,
-    "comments": 0,
+    "comments": 5,
     "created_at": "2019-05-30T16:51:28Z",
-    "updated_at": "2019-05-30T16:51:28Z",
+    "updated_at": "2019-10-22T18:01:04Z",
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "See https://mailarchive.ietf.org/arch/msg/rats/jBCYPK2hly554HGYTXZXa2t_AGw.\r\n\r\nFuture claims could be added that correspond directly to YANG objects (https://tools.ietf.org/html/rfc6020).  There should be guidance in the document as to how such objects can be reflected in the CWT claims registry.\r\n\r\nFor CBOR claims, this could be as simple as providing a reference to https://datatracker.ietf.org/doc/draft-ietf-core-yang-cbor/.  It should be confirmed whether https://tools.ietf.org/html/rfc7951 is sufficient to address future JWT claims."
@@ -1896,9 +1950,9 @@
 
     ],
     "milestone": null,
-    "comments": 0,
+    "comments": 1,
     "created_at": "2018-06-27T18:04:43Z",
-    "updated_at": "2018-06-27T18:04:43Z",
+    "updated_at": "2019-10-17T21:51:36Z",
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "body": "See seclevel discussion in mail list archive: https://mailarchive.ietf.org/arch/browse/eat/"
