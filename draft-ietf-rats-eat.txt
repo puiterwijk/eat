@@ -81,12 +81,12 @@ Table of Contents
      1.3.  EAT Operating Models  . . . . . . . . . . . . . . . . . .   5
      1.4.  What is Not Standardized  . . . . . . . . . . . . . . . .   6
        1.4.1.  Transmission Protocol . . . . . . . . . . . . . . . .   6
-       1.4.2.  Signing Scheme  . . . . . . . . . . . . . . . . . . .   7
+       1.4.2.  Signing Scheme  . . . . . . . . . . . . . . . . . . .   6
    2.  Terminology . . . . . . . . . . . . . . . . . . . . . . . . .   7
    3.  The Claims Information Model  . . . . . . . . . . . . . . . .   8
      3.1.  Nonce Claim (cti and jti) . . . . . . . . . . . . . . . .   8
      3.2.  Timestamp claim (iat) . . . . . . . . . . . . . . . . . .   8
-     3.3.  Universal Entity ID Claim (ueid)  . . . . . . . . . . . .   9
+     3.3.  Universal Entity ID Claim (ueid)  . . . . . . . . . . . .   8
        3.3.1.  CDDL  . . . . . . . . . . . . . . . . . . . . . . . .  11
      3.4.  Origination Claim (origination) . . . . . . . . . . . . .  11
        3.4.1.  CDDL  . . . . . . . . . . . . . . . . . . . . . . . .  12
@@ -114,41 +114,36 @@ Mandyam, et al.            Expires May 4, 2020                  [Page 2]
 Internet-Draft                     EAT                     November 2019
 
 
-     3.11. Submod Attachment Claim (submod_attachment) . . . . . . .  15
+     3.11. Nested EATs, the EAT Claim (nested_eat) . . . . . . . . .  15
        3.11.1.  CDDL . . . . . . . . . . . . . . . . . . . . . . . .  16
-     3.12. The Submods Part of a Token (submods) . . . . . . . . . .  16
-       3.12.1.  Two Types of Submodules  . . . . . . . . . . . . . .  17
-         3.12.1.1.  Non-token Submodules . . . . . . . . . . . . . .  17
-         3.12.1.2.  Nested EATs  . . . . . . . . . . . . . . . . . .  17
-       3.12.2.  No Inheritance . . . . . . . . . . . . . . . . . . .  17
-       3.12.3.  Security Levels and Attachment . . . . . . . . . . .  18
-       3.12.4.  Submodule Names  . . . . . . . . . . . . . . . . . .  18
-       3.12.5.  CDDL . . . . . . . . . . . . . . . . . . . . . . . .  18
-   4.  Data Model  . . . . . . . . . . . . . . . . . . . . . . . . .  18
-     4.1.  Common CDDL Types . . . . . . . . . . . . . . . . . . . .  18
-     4.2.  CDDL for CWT-defined Claims . . . . . . . . . . . . . . .  19
-     4.3.  JSON  . . . . . . . . . . . . . . . . . . . . . . . . . .  20
-       4.3.1.  JSON Labels . . . . . . . . . . . . . . . . . . . . .  20
-       4.3.2.  JSON Interoperability . . . . . . . . . . . . . . . .  20
-     4.4.  CBOR  . . . . . . . . . . . . . . . . . . . . . . . . . .  20
-       4.4.1.  Labels  . . . . . . . . . . . . . . . . . . . . . . .  20
-       4.4.2.  CBOR Interoperability . . . . . . . . . . . . . . . .  21
-     4.5.  Collected CDDL  . . . . . . . . . . . . . . . . . . . . .  22
-   5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .  23
-     5.1.  Reuse of CBOR Web Token (CWT) Claims Registry . . . . . .  23
-       5.1.1.  Claims Registered by This Document  . . . . . . . . .  23
-   6.  Privacy Considerations  . . . . . . . . . . . . . . . . . . .  24
-     6.1.  UEID Privacy Considerations . . . . . . . . . . . . . . .  24
-   7.  Security Considerations . . . . . . . . . . . . . . . . . . .  25
-   8.  References  . . . . . . . . . . . . . . . . . . . . . . . . .  25
-     8.1.  Normative References  . . . . . . . . . . . . . . . . . .  25
-     8.2.  Informative References  . . . . . . . . . . . . . . . . .  26
-   Appendix A.  Examples . . . . . . . . . . . . . . . . . . . . . .  27
-     A.1.  Very Simple EAT . . . . . . . . . . . . . . . . . . . . .  27
-     A.2.  Example with Submodules, Nesting and Security Levels  . .  27
-   Appendix B.  Changes from Previous Drafts . . . . . . . . . . . .  28
-     B.1.  From draft-mandyam-rats-eat-00  . . . . . . . . . . . . .  28
-   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .  28
+     3.12. The Submods Claim (submods) . . . . . . . . . . . . . . .  16
+       3.12.1.  The submod_name Claim  . . . . . . . . . . . . . . .  16
+       3.12.2.  CDDL . . . . . . . . . . . . . . . . . . . . . . . .  16
+   4.  Data Model  . . . . . . . . . . . . . . . . . . . . . . . . .  17
+     4.1.  Common CDDL Types . . . . . . . . . . . . . . . . . . . .  17
+     4.2.  CDDL for CWT-defined Claims . . . . . . . . . . . . . . .  17
+     4.3.  JSON  . . . . . . . . . . . . . . . . . . . . . . . . . .  18
+       4.3.1.  JSON Labels . . . . . . . . . . . . . . . . . . . . .  18
+       4.3.2.  JSON Interoperability . . . . . . . . . . . . . . . .  19
+     4.4.  CBOR  . . . . . . . . . . . . . . . . . . . . . . . . . .  19
+       4.4.1.  Labels  . . . . . . . . . . . . . . . . . . . . . . .  19
+       4.4.2.  CBOR Interoperability . . . . . . . . . . . . . . . .  20
+     4.5.  Collected CDDL  . . . . . . . . . . . . . . . . . . . . .  21
+   5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .  22
+     5.1.  Reuse of CBOR Web Token (CWT) Claims Registry . . . . . .  22
+       5.1.1.  Claims Registered by This Document  . . . . . . . . .  22
+   6.  Privacy Considerations  . . . . . . . . . . . . . . . . . . .  23
+     6.1.  UEID Privacy Considerations . . . . . . . . . . . . . . .  23
+   7.  Security Considerations . . . . . . . . . . . . . . . . . . .  24
+   8.  References  . . . . . . . . . . . . . . . . . . . . . . . . .  24
+     8.1.  Normative References  . . . . . . . . . . . . . . . . . .  24
+     8.2.  Informative References  . . . . . . . . . . . . . . . . .  25
+   Appendix A.  Examples . . . . . . . . . . . . . . . . . . . . . .  26
+     A.1.  Very Simple EAT . . . . . . . . . . . . . . . . . . . . .  26
+     A.2.  Example with Submodules, Nesting and Security Levels  . .  26
+   Appendix B.  Changes from Previous Drafts . . . . . . . . . . . .  27
+     B.1.  From draft-mandyam-rats-eat-00  . . . . . . . . . . . . .  27
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .  27
 
 1.  Introduction
 
@@ -162,6 +157,11 @@ Internet-Draft                     EAT                     November 2019
    Remote attestation is a fundamental service that can underlie other
    protocols and services that need to know about the trustworthiness of
    the device before proceeding.  One good example is biometric
+   authentication where the biometric matching is done on the device.
+   The relying party needs to know that the device is one that is known
+   to do biometric matching correctly.  Another example is content
+   protection where the relying party wants to know the device will
+   protect the data.  This generalizes on to corporate enterprises that
 
 
 
@@ -170,11 +170,6 @@ Mandyam, et al.            Expires May 4, 2020                  [Page 3]
 Internet-Draft                     EAT                     November 2019
 
 
-   authentication where the biometric matching is done on the device.
-   The relying party needs to know that the device is one that is known
-   to do biometric matching correctly.  Another example is content
-   protection where the relying party wants to know the device will
-   protect the data.  This generalizes on to corporate enterprises that
    might want to know that a device is trustworthy before allowing
    corporate data to be accessed by it.
 
@@ -218,6 +213,11 @@ Internet-Draft                     EAT                     November 2019
    submodule EAT's.  It is assumed that any entity that can create an
    EAT does so by means of a dedicated root-of-trust (RoT).
 
+   Modern devices such as a mobile phone have many different execution
+   environments operating with different security levels.  For example,
+   it is common for a mobile phone to have an "apps" environment that
+   runs an operating system (OS) that hosts a plethora of downloadable
+   apps.  It may also have a TEE (Trusted Execution Environment) that is
 
 
 
@@ -226,11 +226,6 @@ Mandyam, et al.            Expires May 4, 2020                  [Page 4]
 Internet-Draft                     EAT                     November 2019
 
 
-   Modern devices such as a mobile phone have many different execution
-   environments operating with different security levels.  For example,
-   it is common for a mobile phone to have an "apps" environment that
-   runs an operating system (OS) that hosts a plethora of downloadable
-   apps.  It may also have a TEE (Trusted Execution Environment) that is
    distinct, isolated, and hosts security-oriented functionality like
    biometric authentication.  Additionally, it may have an eSE (embedded
    Secure Element) - a high security chip with defenses against HW
@@ -275,16 +270,17 @@ Internet-Draft                     EAT                     November 2019
       gets corresponding key material (e.g. a root certificate) from the
       manufacturer.  The relying party performs the verification.
 
+   o  The EAT is transmitted to the relying party.  The relying party
+      transmits the EAT to a verification service offered by the
+      manufacturer.  The server returns the validated claims.
+
+
 
 
 Mandyam, et al.            Expires May 4, 2020                  [Page 5]
 
 Internet-Draft                     EAT                     November 2019
 
-
-   o  The EAT is transmitted to the relying party.  The relying party
-      transmits the EAT to a verification service offered by the
-      manufacturer.  The server returns the validated claims.
 
    o  The EAT is transmitted directly to a verification service, perhaps
       operated by the manufacturer or perhaps by another party.  It
@@ -328,8 +324,12 @@ Internet-Draft                     EAT                     November 2019
    Relying Party, such intermediaries cannot easily modify the EAT
    payload or alter the signature.
 
+1.4.2.  Signing Scheme
 
-
+   The term "signing scheme" is used to refer to the system that
+   includes end-end process of establishing signing attestation key
+   material in the entity, signing the EAT, and verifying it.  This
+   might involve key IDs and X.509 certificate chains or something
 
 
 
@@ -338,12 +338,6 @@ Mandyam, et al.            Expires May 4, 2020                  [Page 6]
 Internet-Draft                     EAT                     November 2019
 
 
-1.4.2.  Signing Scheme
-
-   The term "signing scheme" is used to refer to the system that
-   includes end-end process of establishing signing attestation key
-   material in the entity, signing the EAT, and verifying it.  This
-   might involve key IDs and X.509 certificate chains or something
    similar but different.  The term "signing algorithm" refers just to
    the algorithm ID in the COSE signing structure.  No particular
    signing algorithm or signing scheme is required by this standard.
@@ -386,6 +380,12 @@ Internet-Draft                     EAT                     November 2019
    Attestation Key Material (AKM).  The key material used to sign the
       EAT token.  If it is done symmetrically with HMAC, then this is a
       simple symmetric key.  If it is done with ECC, such as an IEEE
+      DevID [IDevID], then this is the private part of the EC key pair.
+      If ECDAA is used, (e.g., as used by Enhanced Privacy ID, i.e.
+      EPID) then it is the key material needed for ECDAA.
+
+
+
 
 
 
@@ -393,10 +393,6 @@ Mandyam, et al.            Expires May 4, 2020                  [Page 7]
 
 Internet-Draft                     EAT                     November 2019
 
-
-      DevID [IDevID], then this is the private part of the EC key pair.
-      If ECDAA is used, (e.g., as used by Enhanced Privacy ID, i.e.
-      EPID) then it is the key material needed for ECDAA.
 
 3.  The Claims Information Model
 
@@ -438,18 +434,6 @@ Internet-Draft                     EAT                     November 2019
    The "iat" claim defined in CWT and JWT is used to indicate the date-
    of-creation of the token.
 
-
-
-
-
-
-
-
-Mandyam, et al.            Expires May 4, 2020                  [Page 8]
-
-Internet-Draft                     EAT                     November 2019
-
-
 3.3.  Universal Entity ID Claim (ueid)
 
    UEID's identify individual manufactured entities / devices such as a
@@ -458,6 +442,13 @@ Internet-Draft                     EAT                     November 2019
    subsystem.  It does not identify types, models or classes of devices.
    It is akin to a serial number, though it does not have to be
    sequential.
+
+
+
+Mandyam, et al.            Expires May 4, 2020                  [Page 8]
+
+Internet-Draft                     EAT                     November 2019
+
 
    UEID's must be universally and globally unique across manufacturers
    and countries.  UEIDs must also be unique across protocols and
@@ -484,6 +475,15 @@ Internet-Draft                     EAT                     November 2019
    of manufacturer registrations.
 
    Creation of new types requires a Standards Action [RFC8126].
+
+
+
+
+
+
+
+
+
 
 
 
@@ -824,16 +824,16 @@ Internet-Draft                     EAT                     November 2019
    uptime_claim = (
    uptime: uint )
 
-3.11.  Submod Attachment Claim (submod_attachment)
+3.11.  Nested EATs, the EAT Claim (nested_eat)
 
-   This claim must only be used in submodules.  It indicates the type of
-   hardware used to attach the submodule to the containing module.
+   It is allowed for one EAT to be embedded in another.  This is for
+   complex devices that have more than one subsystem capable of
+   generating an EAT.  For example, one might be the device-wide EAT
+   that is low to medium security and another from a Secure Element or
+   similar that is high security.
 
-   It has the following values:
-
-   1 - Unspecified  The means of attachment is unspecified, but presumed
-      to be somewhat local.  One example of this is components of a
-      desktop personal computer that are connected by internal pluggable
+   The contents of the "nested_eat" claim must be a fully signed,
+   optionally encrypted, EAT token.
 
 
 
@@ -842,42 +842,15 @@ Mandyam, et al.            Expires May 4, 2020                 [Page 15]
 Internet-Draft                     EAT                     November 2019
 
 
-      connectors.  Similarly, parts of an automobile connected by
-      pluggable connects is an example.
-
-   2 - Device Internal  The submodule exists as part of the same
-      physical device as the containing module.  While there might be
-      pluggable connections, they are not easily connected or
-      disconnected by the end user.
-
-   3 - PCB Internal  The submodule exists on the same circuit board as
-      the containing module.  An attacker would have to resort to
-      soldering or probing the circuit board to disrupt the connection.
-      An example of this is two chips both soldered to the same circuit
-      board.
-
-   4 - Chip Internal  The submodule exists on the same chip as
-      containing module.  Submodules that make use of TEE or
-      virtualization hardware fall into this category.
-
-   Note that this, like security level, is a self-claim made by the
-   entity originator.  It is not a replacement for a certification
-   program in which a third party independently verifies the security of
-   the attachment.
-
 3.11.1.  CDDL
 
-   attachment_type = (
-   unspecified: 1,
-   device_internal: 2,
-   pcb_internal: 3,
-   chip_internal: 4
-   )
+   nested_eat_claim = (
+   nested_eat: nested_eat_type)
 
-   attachment_type_claim = (
-   attachment: attachment_type )
+   A nested_eat_type is defined in words rather than CDDL.  It is either
+   a full CWT or JWT including the COSE or JOSE signing.
 
-3.12.  The Submods Part of a Token (submods)
+3.12.  The Submods Claim (submods)
 
    Some devices are complex, having many subsystems or submodules.  A
    mobile phone is a good example.  It may have several connectivity
@@ -888,8 +861,35 @@ Internet-Draft                     EAT                     November 2019
 
    The claims for each these can be grouped together in a submodule.
 
-   The submods part of a token a single map/object with many entries,
-   one per submodule.  There is only one submods map in a token.  It is
+   Specifically, the "submods" claim is an array.  Each item in the
+   array is a CBOR map containing all the claims for a particular
+   submodule.
+
+   The security level of the submod is assumed to be at the same level
+   as the main entity unless there is a security level claim in that
+   submodule indicating otherwise.  The security level of a submodule
+   can never be higher (more secure) than the security level of the EAT
+   it is a part of.
+
+3.12.1.  The submod_name Claim
+
+   Each submodule should have a submod_name claim that is descriptive
+   name.  This name should be the CBOR txt type.
+
+3.12.2.  CDDL
+
+   In the following a generic_claim_type is any CBOR map entry or JSON
+   name/value pair.
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -898,93 +898,15 @@ Mandyam, et al.            Expires May 4, 2020                 [Page 16]
 Internet-Draft                     EAT                     November 2019
 
 
-   identified by its specific label.  It is a peer to other claims, but
-   it is not called a claim because it is a container for a claim set
-   rather than an individual claim.  This submods part of a token allows
-   what might be called recursion.  It allows claim sets inside of claim
-   sets inside of claims sets...
+   submod_name_type = (
+   submod_name: tstr )
 
-3.12.1.  Two Types of Submodules
+   submods_type = [ * submod_claims ]
 
-   Each entry in the submod map one of two types:
-
-   o  A non-token submodule that is a map or object directly containing
-      claims for the submodule.
-
-   o  A nested EAT that is a fully-formed, independently signed EAT
-      token
-
-3.12.1.1.  Non-token Submodules
-
-   Essentially this type of submodule, is just a sub-map or sub-object
-   containing claims.  It is recognized from the other type by being a
-   data item of type map in CBOR or by being an object in JSON.
-
-   The contents are claims about the submodule of types defined in this
-   document or anywhere else claims types are defined.
-
-3.12.1.2.  Nested EATs
-
-   This type of submodule is a fully formed EAT as described here.  In
-   this case the submodule has key material distinct from the containing
-   EAT token that allows it to sign on its own.
-
-   When an EAT is nested in another EAT as a submodule the nested EAT
-   MUST use the CBOR CWT tag.  This clearly distinguishes it from the
-   non-token submodules.
-
-3.12.2.  No Inheritance
-
-   The subordinate modules do not inherit anything from the containing
-   token.  The subordinate modules must explicitly include all of their
-   claims.  This is the case even for claims like the nonce and age.
-
-   This rule is in place for simplicity.  It avoids complex inheritance
-   rules that might vary from one type of claim to another.  (TODO: fix
-   the boot claim which does have inheritance as currently described).
-
-
-
-
-
-
-
-Mandyam, et al.            Expires May 4, 2020                 [Page 17]
-
-Internet-Draft                     EAT                     November 2019
-
-
-3.12.3.  Security Levels and Attachment
-
-   The security level of the non-token subordinate modules should always
-   be less than that of the containing modules in the case of non-token
-   submodules.  It makes no sense for a module of lesser security to be
-   signing claims of a module of higher security.  An example of this is
-   a TEE signing claims made by the non-TEE parts (e.g. the high-level
-   OS) of the device.
-
-   The opposite may be true for the nested tokens.  They usually have
-   their own more secure key material.  An example of this is an
-   embedded secure element.
-
-   The submods attachment claim describes how strong the connection is
-   of a submodule to the containing module.  For stronger attachment
-   types the submod might choose to not include claims like the nonce
-   for size, but this is not recommended.
-
-3.12.4.  Submodule Names
-
-   The label or name for each submodule in the submods map is a text
-   string naming the submodule.  No submodules may have the same name.
-
-3.12.5.  CDDL
-
-   In the following a generic_claim_type is any CBOR map entry or JSON
-   name/value pair.
-
-   submods_type = [ * submodule ]
-
-   submodule = eat_claims // eat_token
+   submod_claims = {
+       submod_name_type,
+       * generic_claim_type
+   }
 
    submods_claim = (
    submods: submod_type )
@@ -998,23 +920,39 @@ Internet-Draft                     EAT                     November 2019
 
 string_or_uri = #6.32(tstr) / tstr; See JSON section below for JSON encoding of string_or_uri
 
-
-
-
-
-
-
-
-Mandyam, et al.            Expires May 4, 2020                 [Page 18]
-
-Internet-Draft                     EAT                     November 2019
-
-
 4.2.  CDDL for CWT-defined Claims
 
    This section provides CDDL for the claims defined in CWT.  It is non-
    normative as [RFC8392] is the authoritative definition of these
    claims.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Mandyam, et al.            Expires May 4, 2020                 [Page 17]
+
+Internet-Draft                     EAT                     November 2019
+
 
    cwt_claim = (
        issuer_claim //
@@ -1055,20 +993,22 @@ Internet-Draft                     EAT                     November 2019
    issued_at = 6
    cwt_id = 7
 
-
-
-
-
-
-
-Mandyam, et al.            Expires May 4, 2020                 [Page 19]
-
-Internet-Draft                     EAT                     November 2019
-
-
 4.3.  JSON
 
 4.3.1.  JSON Labels
+
+
+
+
+
+
+
+
+
+Mandyam, et al.            Expires May 4, 2020                 [Page 18]
+
+Internet-Draft                     EAT                     November 2019
+
 
    ueid = "ueid"
    origination = "origination"
@@ -1117,7 +1057,11 @@ Internet-Draft                     EAT                     November 2019
 
 
 
-Mandyam, et al.            Expires May 4, 2020                 [Page 20]
+
+
+
+
+Mandyam, et al.            Expires May 4, 2020                 [Page 19]
 
 Internet-Draft                     EAT                     November 2019
 
@@ -1130,8 +1074,9 @@ Internet-Draft                     EAT                     November 2019
    location = 13
    age = 14
    uptime = 15
-   attachment = 16
+   nested_eat = 16
    submods = 17
+   submod_name = 18
 
    latitude = 1
    longitude = 2
@@ -1172,8 +1117,7 @@ Internet-Draft                     EAT                     November 2019
 
 
 
-
-Mandyam, et al.            Expires May 4, 2020                 [Page 21]
+Mandyam, et al.            Expires May 4, 2020                 [Page 20]
 
 Internet-Draft                     EAT                     November 2019
 
@@ -1229,7 +1173,7 @@ Internet-Draft                     EAT                     November 2019
 
 
 
-Mandyam, et al.            Expires May 4, 2020                 [Page 22]
+Mandyam, et al.            Expires May 4, 2020                 [Page 21]
 
 Internet-Draft                     EAT                     November 2019
 
@@ -1285,7 +1229,7 @@ claim = (
 
 
 
-Mandyam, et al.            Expires May 4, 2020                 [Page 23]
+Mandyam, et al.            Expires May 4, 2020                 [Page 22]
 
 Internet-Draft                     EAT                     November 2019
 
@@ -1341,7 +1285,7 @@ Internet-Draft                     EAT                     November 2019
 
 
 
-Mandyam, et al.            Expires May 4, 2020                 [Page 24]
+Mandyam, et al.            Expires May 4, 2020                 [Page 23]
 
 Internet-Draft                     EAT                     November 2019
 
@@ -1397,7 +1341,7 @@ Internet-Draft                     EAT                     November 2019
 
 
 
-Mandyam, et al.            Expires May 4, 2020                 [Page 25]
+Mandyam, et al.            Expires May 4, 2020                 [Page 24]
 
 Internet-Draft                     EAT                     November 2019
 
@@ -1453,7 +1397,7 @@ Internet-Draft                     EAT                     November 2019
 
 
 
-Mandyam, et al.            Expires May 4, 2020                 [Page 26]
+Mandyam, et al.            Expires May 4, 2020                 [Page 25]
 
 Internet-Draft                     EAT                     November 2019
 
@@ -1509,7 +1453,7 @@ A.2.  Example with Submodules, Nesting and Security Levels
 
 
 
-Mandyam, et al.            Expires May 4, 2020                 [Page 27]
+Mandyam, et al.            Expires May 4, 2020                 [Page 26]
 
 Internet-Draft                     EAT                     November 2019
 
@@ -1565,7 +1509,7 @@ Authors' Addresses
 
 
 
-Mandyam, et al.            Expires May 4, 2020                 [Page 28]
+Mandyam, et al.            Expires May 4, 2020                 [Page 27]
 
 Internet-Draft                     EAT                     November 2019
 
@@ -1621,4 +1565,4 @@ Internet-Draft                     EAT                     November 2019
 
 
 
-Mandyam, et al.            Expires May 4, 2020                 [Page 29]
+Mandyam, et al.            Expires May 4, 2020                 [Page 28]
