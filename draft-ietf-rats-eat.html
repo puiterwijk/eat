@@ -313,11 +313,16 @@ ul.toc li {
 <link href="#rfc.section.3.9" rel="Chapter" title="3.9 The Age Claim (age)">
 <link href="#rfc.section.3.10" rel="Chapter" title="3.10 The Uptime Claim (uptime)">
 <link href="#rfc.section.3.10.1" rel="Chapter" title="3.10.1 CDDL">
-<link href="#rfc.section.3.11" rel="Chapter" title="3.11 Nested EATs, the EAT Claim (nested_eat)">
+<link href="#rfc.section.3.11" rel="Chapter" title="3.11 Submod Attachment Claim (submod_attachment)">
 <link href="#rfc.section.3.11.1" rel="Chapter" title="3.11.1 CDDL">
-<link href="#rfc.section.3.12" rel="Chapter" title="3.12 The Submods Claim (submods)">
-<link href="#rfc.section.3.12.1" rel="Chapter" title="3.12.1 The submod_name Claim">
-<link href="#rfc.section.3.12.2" rel="Chapter" title="3.12.2 CDDL">
+<link href="#rfc.section.3.12" rel="Chapter" title="3.12 The Submods Part of a Token (submods)">
+<link href="#rfc.section.3.12.1" rel="Chapter" title="3.12.1 Two Types of Submodules">
+<link href="#rfc.section.3.12.1.1" rel="Chapter" title="3.12.1.1 Non-token Submodules">
+<link href="#rfc.section.3.12.1.2" rel="Chapter" title="3.12.1.2 Nested EATs">
+<link href="#rfc.section.3.12.2" rel="Chapter" title="3.12.2 No Inheritance">
+<link href="#rfc.section.3.12.3" rel="Chapter" title="3.12.3 Security Levels and Attachment">
+<link href="#rfc.section.3.12.4" rel="Chapter" title="3.12.4 Submodule Names">
+<link href="#rfc.section.3.12.5" rel="Chapter" title="3.12.5 CDDL">
 <link href="#rfc.section.4" rel="Chapter" title="4 Data Model">
 <link href="#rfc.section.4.1" rel="Chapter" title="4.1 Common CDDL Types">
 <link href="#rfc.section.4.2" rel="Chapter" title="4.2 CDDL for CWT-defined Claims">
@@ -345,12 +350,12 @@ ul.toc li {
 <link href="#rfc.authors" rel="Chapter">
 
 
-  <meta name="generator" content="xml2rfc version 2.31.0 - https://tools.ietf.org/tools/xml2rfc" />
+  <meta name="generator" content="xml2rfc version 2.34.0 - https://tools.ietf.org/tools/xml2rfc" />
   <link rel="schema.dct" href="http://purl.org/dc/terms/" />
 
   <meta name="dct.creator" content="Mandyam, G., Lundblade, L., Ballesteros, M., and J. O'Donoghue" />
   <meta name="dct.identifier" content="urn:ietf:id:draft-ietf-rats-eat-latest" />
-  <meta name="dct.issued" scheme="ISO8601" content="2019-10-01" />
+  <meta name="dct.issued" scheme="ISO8601" content="2019-11-01" />
   <meta name="dct.abstract" content="An Entity Attestation Token (EAT) provides a signed (attested) set of claims that describe state and characteristics of an entity, typically a device like a phone or an IoT device.  These claims are used by a relying party to determine how much it wishes to trust the entity.An EAT is either a CWT or JWT with some attestation-oriented claims. To a large degree, all this document does is extend CWT and JWT." />
   <meta name="description" content="An Entity Attestation Token (EAT) provides a signed (attested) set of claims that describe state and characteristics of an entity, typically a device like a phone or an IoT device.  These claims are used by a relying party to determine how much it wishes to trust the entity.An EAT is either a CWT or JWT with some attestation-oriented claims. To a large degree, all this document does is extend CWT and JWT." />
 
@@ -374,7 +379,7 @@ ul.toc li {
 <td class="right">L. Lundblade</td>
 </tr>
 <tr>
-<td class="left">Expires: April 3, 2020</td>
+<td class="left">Expires: May 4, 2020</td>
 <td class="right">Security Theory LLC</td>
 </tr>
 <tr>
@@ -391,7 +396,7 @@ ul.toc li {
 </tr>
 <tr>
 <td class="left"></td>
-<td class="right">October 01, 2019</td>
+<td class="right">November 01, 2019</td>
 </tr>
 
     	
@@ -410,7 +415,7 @@ ul.toc li {
 <p>This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79.</p>
 <p>Internet-Drafts are working documents of the Internet Engineering Task Force (IETF).  Note that other groups may also distribute working documents as Internet-Drafts.  The list of current Internet-Drafts is at https://datatracker.ietf.org/drafts/current/.</p>
 <p>Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."</p>
-<p>This Internet-Draft will expire on April 3, 2020.</p>
+<p>This Internet-Draft will expire on May 4, 2020.</p>
 <h1 id="rfc.copyrightnotice"><a href="#rfc.copyrightnotice">Copyright Notice</a></h1>
 <p>Copyright (c) 2019 IETF Trust and the persons identified as the document authors.  All rights reserved.</p>
 <p>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (https://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document.  Code Components extracted from this document must include Simplified BSD License text as described in Section 4.e of the Trust Legal Provisions and are provided without warranty as described in the Simplified BSD License.</p>
@@ -482,15 +487,25 @@ ul.toc li {
 </li>
 <ul><li>3.10.1.   <a href="#rfc.section.3.10.1">CDDL</a>
 </li>
-</ul><li>3.11.   <a href="#rfc.section.3.11">Nested EATs, the EAT Claim (nested_eat)</a>
+</ul><li>3.11.   <a href="#rfc.section.3.11">Submod Attachment Claim (submod_attachment)</a>
 </li>
 <ul><li>3.11.1.   <a href="#rfc.section.3.11.1">CDDL</a>
 </li>
-</ul><li>3.12.   <a href="#rfc.section.3.12">The Submods Claim (submods)</a>
+</ul><li>3.12.   <a href="#rfc.section.3.12">The Submods Part of a Token (submods)</a>
 </li>
-<ul><li>3.12.1.   <a href="#rfc.section.3.12.1">The submod_name Claim</a>
+<ul><li>3.12.1.   <a href="#rfc.section.3.12.1">Two Types of Submodules</a>
 </li>
-<li>3.12.2.   <a href="#rfc.section.3.12.2">CDDL</a>
+<ul><li>3.12.1.1.   <a href="#rfc.section.3.12.1.1">Non-token Submodules</a>
+</li>
+<li>3.12.1.2.   <a href="#rfc.section.3.12.1.2">Nested EATs</a>
+</li>
+</ul><li>3.12.2.   <a href="#rfc.section.3.12.2">No Inheritance</a>
+</li>
+<li>3.12.3.   <a href="#rfc.section.3.12.3">Security Levels and Attachment</a>
+</li>
+<li>3.12.4.   <a href="#rfc.section.3.12.4">Submodule Names</a>
+</li>
+<li>3.12.5.   <a href="#rfc.section.3.12.5">CDDL</a>
 </li>
 </ul></ul><li>4.   <a href="#rfc.section.4">Data Model</a>
 </li>
@@ -883,43 +898,86 @@ uptime_claim = (
 uptime: uint )
 </pre>
 <h1 id="rfc.section.3.11">
-<a href="#rfc.section.3.11">3.11.</a> <a href="#nested-eats-the-eat-claim-nestedeat" id="nested-eats-the-eat-claim-nestedeat">Nested EATs, the EAT Claim (nested_eat)</a>
+<a href="#rfc.section.3.11">3.11.</a> <a href="#submod-attachment-claim-submodattachment" id="submod-attachment-claim-submodattachment">Submod Attachment Claim (submod_attachment)</a>
 </h1>
-<p id="rfc.section.3.11.p.1">It is allowed for one EAT to be embedded in another. This is for complex devices that have more than one subsystem capable of generating an EAT. For example, one might be the device-wide EAT that is low to medium security and another from a Secure Element or similar that is high security.</p>
-<p id="rfc.section.3.11.p.2">The contents of the &#8220;nested_eat&#8221; claim must be a fully signed, optionally encrypted, EAT token.</p>
+<p id="rfc.section.3.11.p.1">This claim must only be used in submodules. It indicates the type of hardware used to attach the submodule to the containing module.</p>
+<p id="rfc.section.3.11.p.2">It has the following values:</p>
+<p></p>
+
+<dl>
+<dt>1 &#8211; Unspecified</dt>
+<dd style="margin-left: 8">The means of attachment is unspecified, but presumed to be somewhat local. One example of this is components of a desktop personal computer that are connected by internal pluggable connectors. Similarly, parts of an automobile connected by pluggable connects is an example.</dd>
+<dt>2 &#8211; Device Internal</dt>
+<dd style="margin-left: 8">The submodule exists as part of the same physical device as the containing module. While there might be pluggable connections, they are not easily connected or disconnected by the end user.</dd>
+<dt>3 &#8211; PCB Internal</dt>
+<dd style="margin-left: 8">The submodule exists on the same circuit board as the containing module. An attacker would have to resort to soldering or probing the circuit board to disrupt the connection. An example of this is two chips both soldered to the same circuit board.</dd>
+<dt>4 &#8211; Chip Internal</dt>
+<dd style="margin-left: 8">The submodule exists on the same chip as containing module.  Submodules that make use of TEE or virtualization hardware fall into this category.</dd>
+</dl>
+<p id="rfc.section.3.11.p.4">Note that this, like security level, is a self-claim made by the entity originator. It is not a replacement for a certification program in which a third party independently verifies the security of the attachment.</p>
 <h1 id="rfc.section.3.11.1">
 <a href="#rfc.section.3.11.1">3.11.1.</a> <a href="#cddl-7" id="cddl-7">CDDL</a>
 </h1>
 <pre>
-nested_eat_claim = (
-nested_eat: nested_eat_type)
+attachment_type = (
+unspecified: 1,
+device_internal: 2,
+pcb_internal: 3,
+chip_internal: 4
+)
+
+attachment_type_claim = (
+attachment: attachment_type )
 </pre>
-<p id="rfc.section.3.11.1.p.1">A nested_eat_type is defined in words rather than CDDL. It is either a full CWT or JWT including the COSE or JOSE signing.</p>
 <h1 id="rfc.section.3.12">
-<a href="#rfc.section.3.12">3.12.</a> <a href="#the-submods-claim-submods" id="the-submods-claim-submods">The Submods Claim (submods)</a>
+<a href="#rfc.section.3.12">3.12.</a> <a href="#the-submods-part-of-a-token-submods" id="the-submods-part-of-a-token-submods">The Submods Part of a Token (submods)</a>
 </h1>
 <p id="rfc.section.3.12.p.1">Some devices are complex, having many subsystems or submodules.  A mobile phone is a good example. It may have several connectivity submodules for communications (e.g., Wi-Fi and cellular). It may have subsystems for low-power audio and video playback. It may have one or more security-oriented subsystems like a TEE or a Secure Element.</p>
 <p id="rfc.section.3.12.p.2">The claims for each these can be grouped together in a submodule.</p>
-<p id="rfc.section.3.12.p.3">Specifically, the &#8220;submods&#8221; claim is an array. Each item in the array is a CBOR map containing all the claims for a particular submodule.</p>
-<p id="rfc.section.3.12.p.4">The security level of the submod is assumed to be at the same level as the main entity unless there is a security level claim in that submodule indicating otherwise. The security level of a submodule can never be higher (more secure) than the security level of the EAT it is a part of.</p>
+<p id="rfc.section.3.12.p.3">The submods part of a token a single map/object with many entries, one per submodule.  There is only one submods map in a token. It is identified by its specific label. It is a peer to other claims, but it is not called a claim because it is a container for a claim set rather than an individual claim. This submods part of a token allows what might be called recursion. It allows claim sets inside of claim sets inside of claims sets&#8230;</p>
 <h1 id="rfc.section.3.12.1">
-<a href="#rfc.section.3.12.1">3.12.1.</a> <a href="#the-submodname-claim" id="the-submodname-claim">The submod_name Claim</a>
+<a href="#rfc.section.3.12.1">3.12.1.</a> <a href="#two-types-of-submodules" id="two-types-of-submodules">Two Types of Submodules</a>
 </h1>
-<p id="rfc.section.3.12.1.p.1">Each submodule should have a submod_name claim that is descriptive name. This name should be the CBOR txt type.</p>
+<p id="rfc.section.3.12.1.p.1">Each entry in the submod map one of two types:</p>
+<p></p>
+
+<ul>
+<li>A non-token submodule that is a map or object directly containing claims for the submodule.</li>
+<li>A nested EAT that is a fully-formed, independently signed EAT token</li>
+</ul>
+<h1 id="rfc.section.3.12.1.1">
+<a href="#rfc.section.3.12.1.1">3.12.1.1.</a> <a href="#non-token-submodules" id="non-token-submodules">Non-token Submodules</a>
+</h1>
+<p id="rfc.section.3.12.1.1.p.1">Essentially this type of submodule, is just a sub-map or sub-object containing claims. It is recognized from the other type by being a data item of type map in CBOR or by being an object in JSON.</p>
+<p id="rfc.section.3.12.1.1.p.2">The contents are claims about the submodule of types defined in this document or anywhere else claims types are defined.</p>
+<h1 id="rfc.section.3.12.1.2">
+<a href="#rfc.section.3.12.1.2">3.12.1.2.</a> <a href="#nested-eats" id="nested-eats">Nested EATs</a>
+</h1>
+<p id="rfc.section.3.12.1.2.p.1">This type of submodule is a fully formed EAT as described here. In this case the submodule has key material distinct from the containing EAT token that allows it to sign on its own.</p>
+<p id="rfc.section.3.12.1.2.p.2">When an EAT is nested in another EAT as a submodule the nested EAT MUST use the CBOR CWT tag. This clearly distinguishes it from the non-token submodules.</p>
 <h1 id="rfc.section.3.12.2">
-<a href="#rfc.section.3.12.2">3.12.2.</a> <a href="#cddl-8" id="cddl-8">CDDL</a>
+<a href="#rfc.section.3.12.2">3.12.2.</a> <a href="#no-inheritance" id="no-inheritance">No Inheritance</a>
 </h1>
-<p id="rfc.section.3.12.2.p.1">In the following a generic_claim_type is any CBOR map entry or JSON name/value pair.</p>
+<p id="rfc.section.3.12.2.p.1">The subordinate modules do not inherit anything from the containing token.  The subordinate modules must explicitly include all of their claims. This is the case even for claims like the nonce and age.</p>
+<p id="rfc.section.3.12.2.p.2">This rule is in place for simplicity. It avoids complex inheritance rules that might vary from one type of claim to another. (TODO: fix the boot claim which does have inheritance as currently described).</p>
+<h1 id="rfc.section.3.12.3">
+<a href="#rfc.section.3.12.3">3.12.3.</a> <a href="#security-levels-and-attachment" id="security-levels-and-attachment">Security Levels and Attachment</a>
+</h1>
+<p id="rfc.section.3.12.3.p.1">The security level of the non-token subordinate modules should always be less than that of the containing modules in the case of non-token submodules. It makes no sense for a module of lesser security to be signing claims of a module of higher security. An example of this is a TEE signing claims made by the non-TEE parts (e.g. the high-level OS) of the device.</p>
+<p id="rfc.section.3.12.3.p.2">The opposite may be true for the nested tokens. They usually have their own more secure key material. An example of this is an embedded secure element.</p>
+<p id="rfc.section.3.12.3.p.3">The submods attachment claim describes how strong the connection is of a submodule to the containing module. For stronger attachment types the submod might choose to not include claims like the nonce for size, but this is not recommended.</p>
+<h1 id="rfc.section.3.12.4">
+<a href="#rfc.section.3.12.4">3.12.4.</a> <a href="#submodule-names" id="submodule-names">Submodule Names</a>
+</h1>
+<p id="rfc.section.3.12.4.p.1">The label or name for each submodule in the submods map is a text string naming the submodule. No submodules may have the same name.</p>
+<h1 id="rfc.section.3.12.5">
+<a href="#rfc.section.3.12.5">3.12.5.</a> <a href="#cddl-8" id="cddl-8">CDDL</a>
+</h1>
+<p id="rfc.section.3.12.5.p.1">In the following a generic_claim_type is any CBOR map entry or JSON name/value pair.</p>
 <pre>
-submod_name_type = (
-submod_name: tstr )
+submods_type = [ * submodule ]
 
-submods_type = [ * submod_claims ]
-
-submod_claims = {
-    submod_name_type,
-    * generic_claim_type
-}
+submodule = eat_claims // eat_token
 
 submods_claim = (
 submods: submod_type )
@@ -1030,9 +1088,8 @@ boot_state = 12
 location = 13
 age = 14
 uptime = 15
-nested_eat = 16
+attachment = 16
 submods = 17
-submod_name = 18
 
 latitude = 1
 longitude = 2
