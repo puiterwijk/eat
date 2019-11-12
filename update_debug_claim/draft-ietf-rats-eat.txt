@@ -5,11 +5,11 @@
 RATS Working Group                                            G. Mandyam
 Internet-Draft                                Qualcomm Technologies Inc.
 Intended status: Standards Track                            L. Lundblade
-Expires: April 13, 2020                              Security Theory LLC
+Expires: May 15, 2020                                Security Theory LLC
                                                           M. Ballesteros
                                                            J. O'Donoghue
                                               Qualcomm Technologies Inc.
-                                                        October 11, 2019
+                                                       November 12, 2019
 
 
                    The Entity Attestation Token (EAT)
@@ -45,7 +45,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on April 13, 2020.
+   This Internet-Draft will expire on May 15, 2020.
 
 
 
@@ -53,9 +53,9 @@ Status of This Memo
 
 
 
-Mandyam, et al.          Expires April 13, 2020                 [Page 1]
+Mandyam, et al.           Expires May 15, 2020                  [Page 1]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
 Copyright Notice
@@ -109,9 +109,9 @@ Table of Contents
 
 
 
-Mandyam, et al.          Expires April 13, 2020                 [Page 2]
+Mandyam, et al.           Expires May 15, 2020                  [Page 2]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
      3.10. The Uptime Claim (uptime) . . . . . . . . . . . . . . . .  16
@@ -165,9 +165,9 @@ Internet-Draft                     EAT                      October 2019
 
 
 
-Mandyam, et al.          Expires April 13, 2020                 [Page 3]
+Mandyam, et al.           Expires May 15, 2020                  [Page 3]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
    protection where the relying party wants to know the device will
@@ -221,9 +221,9 @@ Internet-Draft                     EAT                      October 2019
 
 
 
-Mandyam, et al.          Expires April 13, 2020                 [Page 4]
+Mandyam, et al.           Expires May 15, 2020                  [Page 4]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
    runs an operating system (OS) that hosts a plethora of downloadable
@@ -277,9 +277,9 @@ Internet-Draft                     EAT                      October 2019
 
 
 
-Mandyam, et al.          Expires April 13, 2020                 [Page 5]
+Mandyam, et al.           Expires May 15, 2020                  [Page 5]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
    o  The EAT is transmitted to the relying party.  The relying party
@@ -333,9 +333,9 @@ Internet-Draft                     EAT                      October 2019
 
 
 
-Mandyam, et al.          Expires April 13, 2020                 [Page 6]
+Mandyam, et al.           Expires May 15, 2020                  [Page 6]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
 1.4.2.  Signing Scheme
@@ -389,9 +389,9 @@ Internet-Draft                     EAT                      October 2019
 
 
 
-Mandyam, et al.          Expires April 13, 2020                 [Page 7]
+Mandyam, et al.           Expires May 15, 2020                  [Page 7]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
       DevID [IDevID], then this is the private part of the EC key pair.
@@ -445,9 +445,9 @@ Internet-Draft                     EAT                      October 2019
 
 
 
-Mandyam, et al.          Expires April 13, 2020                 [Page 8]
+Mandyam, et al.           Expires May 15, 2020                  [Page 8]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
 3.3.  Universal Entity ID Claim (ueid)
@@ -501,9 +501,9 @@ Internet-Draft                     EAT                      October 2019
 
 
 
-Mandyam, et al.          Expires April 13, 2020                 [Page 9]
+Mandyam, et al.           Expires May 15, 2020                  [Page 9]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
    +------+--------+---------------------------------------------------+
@@ -557,9 +557,9 @@ Internet-Draft                     EAT                      October 2019
 
 
 
-Mandyam, et al.          Expires April 13, 2020                [Page 10]
+Mandyam, et al.           Expires May 15, 2020                 [Page 10]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
    internal structure.  For example, they should not use the OUI part of
@@ -613,9 +613,9 @@ Internet-Draft                     EAT                      October 2019
 
 
 
-Mandyam, et al.          Expires April 13, 2020                [Page 11]
+Mandyam, et al.           Expires May 15, 2020                 [Page 11]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
 3.4.1.  CDDL
@@ -669,9 +669,9 @@ Internet-Draft                     EAT                      October 2019
 
 
 
-Mandyam, et al.          Expires April 13, 2020                [Page 12]
+Mandyam, et al.           Expires May 15, 2020                 [Page 12]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
    3 - Secure Restricted  Entities at this level must meet the criteria
@@ -725,9 +725,9 @@ Internet-Draft                     EAT                      October 2019
 
 
 
-Mandyam, et al.          Expires April 13, 2020                [Page 13]
+Mandyam, et al.           Expires May 15, 2020                 [Page 13]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
    because the software is in ROM or because it is cryptographically
@@ -760,7 +760,9 @@ Internet-Draft                     EAT                      October 2019
 3.7.2.2.  Disabled
 
    This level indicates all debug facilities are currently disabled.  It
-   may be possible to enabled them, but they are currently disabled.
+   may be possible to enable them in the future, and it may also be
+   possible that they were enabled in the past after the device booted,
+   but they are currently disabled.
 
 3.7.2.3.  Disabled Since Boot
 
@@ -779,11 +781,9 @@ Internet-Draft                     EAT                      October 2019
 
 
 
-
-
-Mandyam, et al.          Expires April 13, 2020                [Page 14]
+Mandyam, et al.           Expires May 15, 2020                 [Page 14]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
 3.7.2.5.  Full Permanent Disable
@@ -837,9 +837,9 @@ Internet-Draft                     EAT                      October 2019
 
 
 
-Mandyam, et al.          Expires April 13, 2020                [Page 15]
+Mandyam, et al.           Expires May 15, 2020                 [Page 15]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
 3.9.  The Age Claim (age)
@@ -893,9 +893,9 @@ Internet-Draft                     EAT                      October 2019
 
 
 
-Mandyam, et al.          Expires April 13, 2020                [Page 16]
+Mandyam, et al.           Expires May 15, 2020                 [Page 16]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
    one or more security-oriented subsystems like a TEE or a Secure
@@ -949,9 +949,9 @@ string_or_uri = #6.32(tstr) / tstr; See JSON section below for JSON encoding of 
 
 
 
-Mandyam, et al.          Expires April 13, 2020                [Page 17]
+Mandyam, et al.           Expires May 15, 2020                 [Page 17]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
 4.2.  CDDL for CWT-defined Claims
@@ -1005,9 +1005,9 @@ Internet-Draft                     EAT                      October 2019
 
 
 
-Mandyam, et al.          Expires April 13, 2020                [Page 18]
+Mandyam, et al.           Expires May 15, 2020                 [Page 18]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
 4.3.  JSON
@@ -1061,9 +1061,9 @@ Internet-Draft                     EAT                      October 2019
 
 
 
-Mandyam, et al.          Expires April 13, 2020                [Page 19]
+Mandyam, et al.           Expires May 15, 2020                 [Page 19]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
    ueid = 8
@@ -1117,9 +1117,9 @@ Internet-Draft                     EAT                      October 2019
 
 
 
-Mandyam, et al.          Expires April 13, 2020                [Page 20]
+Mandyam, et al.           Expires May 15, 2020                 [Page 20]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
       may also encode the lengths of strings in any way allowed by CBOR.
@@ -1173,9 +1173,9 @@ Internet-Draft                     EAT                      October 2019
 
 
 
-Mandyam, et al.          Expires April 13, 2020                [Page 21]
+Mandyam, et al.           Expires May 15, 2020                 [Page 21]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
 eat_claims = {  ; the top-level payload that is signed using COSE or JOSE
@@ -1229,9 +1229,9 @@ claim = (
 
 
 
-Mandyam, et al.          Expires April 13, 2020                [Page 22]
+Mandyam, et al.           Expires May 15, 2020                 [Page 22]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
 6.  Privacy Considerations
@@ -1285,9 +1285,9 @@ Internet-Draft                     EAT                      October 2019
 
 
 
-Mandyam, et al.          Expires April 13, 2020                [Page 23]
+Mandyam, et al.           Expires May 15, 2020                 [Page 23]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
 7.  Security Considerations
@@ -1341,9 +1341,9 @@ Internet-Draft                     EAT                      October 2019
 
 
 
-Mandyam, et al.          Expires April 13, 2020                [Page 24]
+Mandyam, et al.           Expires May 15, 2020                 [Page 24]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
    [RFC8610]  Birkholz, H., Vigano, C., and C. Bormann, "Concise Data
@@ -1397,9 +1397,9 @@ Internet-Draft                     EAT                      October 2019
 
 
 
-Mandyam, et al.          Expires April 13, 2020                [Page 25]
+Mandyam, et al.           Expires May 15, 2020                 [Page 25]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
 Appendix A.  Examples
@@ -1453,9 +1453,9 @@ A.2.  Example with Submodules, Nesting and Security Levels
 
 
 
-Mandyam, et al.          Expires April 13, 2020                [Page 26]
+Mandyam, et al.           Expires May 15, 2020                 [Page 26]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
 Appendix B.  Changes from Previous Drafts
@@ -1509,9 +1509,9 @@ Authors' Addresses
 
 
 
-Mandyam, et al.          Expires April 13, 2020                [Page 27]
+Mandyam, et al.           Expires May 15, 2020                 [Page 27]
 
-Internet-Draft                     EAT                      October 2019
+Internet-Draft                     EAT                     November 2019
 
 
    Jeremy O'Donoghue
@@ -1565,4 +1565,4 @@ Internet-Draft                     EAT                      October 2019
 
 
 
-Mandyam, et al.          Expires April 13, 2020                [Page 28]
+Mandyam, et al.           Expires May 15, 2020                 [Page 28]
