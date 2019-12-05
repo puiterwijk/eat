@@ -18,7 +18,7 @@ relying party to determine how much it wishes to trust the entity.
 claims. To a large degree, all this document does is extend
 CWT and JWT. 
     " name="description">
-<meta content="xml2rfc 2.35.0" name="generator">
+<meta content="xml2rfc 2.36.0" name="generator">
 <meta content="signing attestation cbor" name="keyword">
 <meta content="draft-ietf-rats-eat-latest" name="ietf.draft">
 <link href="draft-ietf-rats-eat.xml" rel="alternate" type="application/rfc+xml">
@@ -27,7 +27,7 @@ CWT and JWT.
 
 html {
   --background-color: #fff;
-  --text-color: #333;
+  --text-color: #222;
   --title-color: #191919;
   --link-color: #2a6496;
   --highlight-color: #f9f9f9;
@@ -309,12 +309,6 @@ a.pilcrow {
   margin-left: 3px;
   visibility: hidden;
   user-select: none;
-  -ms-user-select: none;
-  -o-user-select:none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
 }
 a.pilcrow[href] { color: #ddd; }
 a.pilcrow[href]:hover { text-decoration: none; }
@@ -477,9 +471,7 @@ hr.addr {
     display: relative;
     padding: 32px 0 0;
     column-count: 2;
-    -moz-column-count: 2;
     column-gap: 20px;
-    -moz-column-gap: 20px;
   }
   #name-authors-addresses {
     position: absolute;
@@ -832,11 +824,11 @@ table.left {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">EAT</td>
-<td class="right">November 2019</td>
+<td class="right">December 2019</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Mandyam, et al.</td>
-<td class="center">Expires 30 May 2020</td>
+<td class="center">Expires 7 June 2020</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -849,12 +841,12 @@ table.left {
 <dd class="internet-draft">draft-ietf-rats-eat-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2019-11-27" class="published">27 November 2019</time>
+<time datetime="2019-12-05" class="published">5 December 2019</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2020-05-30">30 May 2020</time></dd>
+<dd class="expires"><time datetime="2020-06-07">7 June 2020</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -912,7 +904,7 @@ CWT and JWT.<a href="#section-abstract-2" class="pilcrow">¶</a></p>
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 30 May 2020.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 7 June 2020.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -995,7 +987,7 @@ CWT and JWT.<a href="#section-abstract-2" class="pilcrow">¶</a></p>
                 </ul>
 </li>
               <li class="toc ulEmpty" id="section-toc.1-1.3.2.5">
-                <p id="section-toc.1-1.3.2.5.1"><a href="#section-3.5" class="xref">3.5</a>.  <a href="#name-oem-identification-by-ieee-" class="xref">OEM identification by IEEE OUI (oemid)</a><a href="#section-toc.1-1.3.2.5.1" class="pilcrow">¶</a></p>
+                <p id="section-toc.1-1.3.2.5.1"><a href="#section-3.5" class="xref">3.5</a>.  <a href="#name-oem-identification-by-ieee-" class="xref">OEM Identification by IEEE (oemid)</a><a href="#section-toc.1-1.3.2.5.1" class="pilcrow">¶</a></p>
 <ul class="toc ulEmpty">
 <li class="toc ulEmpty" id="section-toc.1-1.3.2.5.2.1">
                     <p id="section-toc.1-1.3.2.5.2.1.1"><a href="#section-3.5.1" class="xref">3.5.1</a>.  <a href="#name-cddl-3" class="xref">CDDL</a><a href="#section-toc.1-1.3.2.5.2.1.1" class="pilcrow">¶</a></p>
@@ -1630,20 +1622,30 @@ origination: string_or_uri )
 </div>
 </section>
 </div>
-<div id="oem-identification-by-ieee-oui-oemid">
+<div id="oem-identification-by-ieee-oemid">
 <section id="section-3.5">
         <h3 id="name-oem-identification-by-ieee-">
-<a href="#section-3.5" class="section-number selfRef">3.5. </a><a href="#name-oem-identification-by-ieee-" class="section-name selfRef">OEM identification by IEEE OUI (oemid)</a>
+<a href="#section-3.5" class="section-number selfRef">3.5. </a><a href="#name-oem-identification-by-ieee-" class="section-name selfRef">OEM Identification by IEEE (oemid)</a>
         </h3>
-<p id="section-3.5-1">This claim identifies a device OEM by the IEEE OUI. Reference TBD. It
-is a byte string representing the OUI in binary form in network byte
-order (TODO: confirm details).<a href="#section-3.5-1" class="pilcrow">¶</a></p>
-<p id="section-3.5-2">Companies that have more than one IEEE OUI registered with IEEE should
-pick one and prefer that for all their devices.<a href="#section-3.5-2" class="pilcrow">¶</a></p>
-<p id="section-3.5-3">Note that the OUI is in common use as a part of MAC Address. This
-claim is only the first bits of the MAC address that identify the
-manufacturer. The IEEE maintains a registry for these in which many
-companies participate.<a href="#section-3.5-3" class="pilcrow">¶</a></p>
+<p id="section-3.5-1">The IEEE operates a global registry for MAC addresses and company IDs.
+This claim uses that database to identify OEMs. The contents of the
+claim may be either an IEEE MA-L, MA-M, MA-S or an IEEE CID
+<span>[<a href="#IEEE.RA" class="xref">IEEE.RA</a>]</span>.  An MA-L, formerly known as an OUI, is a 24-bit value
+used as the first half of a MAC address. MA-M similarly is a 28-bit
+value uses as the first part of a MAC address, and MA-S, formerly
+known as OUI-36, a 36-bit value.  Many companies already have purchased
+one of these. A CID is also a 24-bit value from the same space as an
+MA-L, but not for use as a MAC address.  IEEE has published Guidelines
+for Use of EUI, OUI, and CID <span>[<a href="#OUI.Guide" class="xref">OUI.Guide</a>]</span> and provides a lookup
+services <span>[<a href="#OUI.Lookup" class="xref">OUI.Lookup</a>]</span><a href="#section-3.5-1" class="pilcrow">¶</a></p>
+<p id="section-3.5-2">Companies that have more than one of these IDs or MAC address blocks
+should pick one and prefer that for all their devices.<a href="#section-3.5-2" class="pilcrow">¶</a></p>
+<p id="section-3.5-3">Commonly, these are expressed in Hexadecimal Representation
+<span>[<a href="#IEEE.802-2001" class="xref">IEEE.802-2001</a>]</span> also called the Canonical format. When this claim is
+encoded order of bytes in the bstr are the same as the order in the
+Hexadecimal Representation. For example, an MA-L like "AC-DE-48" would
+be encoded in 3 bytes with values 0xAC, 0xDE, 0x48. For JSON encoded
+tokens, this is further base64url encoded.<a href="#section-3.5-3" class="pilcrow">¶</a></p>
 <div id="cddl-2">
 <section id="section-3.5.1">
           <h4 id="name-cddl-3">
@@ -2398,6 +2400,18 @@ those do not.<a href="#section-7-1" class="pilcrow">¶</a></p>
 <dt id="IDevID">[IDevID]</dt>
         <dd>
 <span class="refTitle">"IEEE Standard, "IEEE 802.1AR Secure Device Identifier""</span>, <time datetime="2009-12">December 2009</time>, <span>&lt;<a href="http://standards.ieee.org/findstds/standard/802.1AR-2009.html">http://standards.ieee.org/findstds/standard/802.1AR-2009.html</a>&gt;</span>. </dd>
+<dt id="IEEE.802-2001">[IEEE.802-2001]</dt>
+        <dd>
+<span class="refTitle">"IEEE Standard For Local And Metropolitan Area Networks Overview And Architecture"</span>, <time datetime="2007">2007</time>, <span>&lt;<a href="https://webstore.ansi.org/standards/ieee/ieee8022001r2007">https://webstore.ansi.org/standards/ieee/ieee8022001r2007</a>&gt;</span>. </dd>
+<dt id="IEEE.RA">[IEEE.RA]</dt>
+        <dd>
+<span class="refTitle">"IEEE Registration Authority"</span>, <time></time>, <span>&lt;<a href="https://standards.ieee.org/products-services/regauth/index.html">https://standards.ieee.org/products-services/regauth/index.html</a>&gt;</span>. </dd>
+<dt id="OUI.Guide">[OUI.Guide]</dt>
+        <dd>
+<span class="refTitle">"Guidelines for Use of Extended Unique Identifier (EUI), Organizationally Unique Identifier (OUI), and Company ID (CID)"</span>, <time datetime="2017-08">August 2017</time>, <span>&lt;<a href="https://standards.ieee.org/content/dam/ieee-standards/standards/web/documents/tutorials/eui.pdf">https://standards.ieee.org/content/dam/ieee-standards/standards/web/documents/tutorials/eui.pdf</a>&gt;</span>. </dd>
+<dt id="OUI.Lookup">[OUI.Lookup]</dt>
+        <dd>
+<span class="refTitle">"IEEE Registration Authority Assignments"</span>, <time></time>, <span>&lt;<a href="https://regauth.standards.ieee.org/standards-ra-web/pub/view.html#registries">https://regauth.standards.ieee.org/standards-ra-web/pub/view.html#registries</a>&gt;</span>. </dd>
 <dt id="Webauthn">[Webauthn]</dt>
       <dd>
 <span class="refAuthor">Worldwide Web Consortium</span>, <span class="refTitle">"Web Authentication: A Web API for accessing scoped credentials"</span>, <time datetime="2016">2016</time>. </dd>
