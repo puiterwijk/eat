@@ -454,10 +454,16 @@ Internet-Draft                     EAT                     December 2019
    claims registry.  This is equivalent to the JWT nonce claim that is
    already registered.
 
+   The nonce must be at least 8 bytes (64 bits) as fewer are unlikely to
+   be secure.  A maximum of 64 bytes is set to limit the memory a
+   constrained implementation uses.  This size range is not set for the
+   already-registered JWT nonce, but it should follow this size
+   recommendation when used in an EAT.
+
 3.3.1.  CDDL
 
    nonce_claim = (
-   nonce: bstr
+       nonce => bstr .size (8..64)
    )
 
 3.4.  Universal Entity ID Claim (ueid)
@@ -493,18 +499,14 @@ Internet-Draft                     EAT                     December 2019
    processes and to give options to avoid paying fees for certain types
    of manufacturer registrations.
 
-   Creation of new types requires a Standards Action [RFC8126].
-
-
-
-
-
 
 
 Mandyam, et al.            Expires 8 June 2020                  [Page 9]
 
 Internet-Draft                     EAT                     December 2019
 
+
+   Creation of new types requires a Standards Action [RFC8126].
 
    +------+--------+---------------------------------------------------+
    | Type | Type   | Specification                                     |
@@ -552,8 +554,6 @@ Internet-Draft                     EAT                     December 2019
    |      |        | concatenating the 24-bit OUI with a 40-bit        |
    |      |        | identifier assigned by the organisation that      |
    |      |        | purchased the OUI.                                |
-   +------+--------+---------------------------------------------------+
-
 
 
 
@@ -561,6 +561,8 @@ Mandyam, et al.            Expires 8 June 2020                 [Page 10]
 
 Internet-Draft                     EAT                     December 2019
 
+
+   +------+--------+---------------------------------------------------+
 
                       Table 1: UEID Composition Types
 
@@ -596,8 +598,6 @@ Internet-Draft                     EAT                     December 2019
    This claim describes the parts of the device or entity that are
    creating the EAT.  Often it will be tied back to the device or chip
    manufacturer.  The following table gives some examples:
-
-
 
 
 

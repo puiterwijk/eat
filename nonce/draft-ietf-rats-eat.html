@@ -1471,6 +1471,11 @@ token is generated and then included in the token as the nonce claim.<a href="#s
 <p id="section-3.3-2">This documents the nonce claim for registration in the IANA CWT 
 claims registry. This is equivalent to the JWT nonce claim that is
 already registered.<a href="#section-3.3-2" class="pilcrow">¶</a></p>
+<p id="section-3.3-3">The nonce must be at least 8 bytes (64 bits) as fewer are unlikely
+to be secure. A maximum of 64 bytes is set to limit the memory
+a constrained implementation uses. This size range is not set
+for the already-registered JWT nonce, but it should follow
+this size recommendation when used in an EAT.<a href="#section-3.3-3" class="pilcrow">¶</a></p>
 <div id="cddl">
 <section id="section-3.3.1">
           <h4 id="name-cddl">
@@ -1479,7 +1484,7 @@ already registered.<a href="#section-3.3-2" class="pilcrow">¶</a></p>
 <div class="artwork art-text alignLeft" id="section-3.3.1-1">
 <pre>
 nonce_claim = (
-nonce: bstr
+    nonce =&gt; bstr .size (8..64)
 )
 </pre><a href="#section-3.3.1-1" class="pilcrow">¶</a>
 </div>
