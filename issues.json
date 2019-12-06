@@ -347,9 +347,9 @@
 
     ],
     "milestone": null,
-    "comments": 0,
+    "comments": 1,
     "created_at": "2019-10-23T20:40:45Z",
-    "updated_at": "2019-11-19T08:43:46Z",
+    "updated_at": "2019-12-06T21:55:01Z",
     "closed_at": null,
     "author_association": "COLLABORATOR",
     "pull_request": {
@@ -394,7 +394,7 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
@@ -403,8 +403,8 @@
     "milestone": null,
     "comments": 2,
     "created_at": "2019-10-17T18:59:42Z",
-    "updated_at": "2019-12-05T23:02:25Z",
-    "closed_at": null,
+    "updated_at": "2019-12-05T23:05:26Z",
+    "closed_at": "2019-12-05T23:05:18Z",
     "author_association": "COLLABORATOR",
     "pull_request": {
       "url": "https://api.github.com/repos/ietf-rats-wg/eat/pulls/41",
