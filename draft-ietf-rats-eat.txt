@@ -144,7 +144,8 @@ Internet-Draft                     EAT                      January 2020
      A.2.  Example with Submodules, Nesting and Security Levels  . .  26
    Appendix B.  Changes from Previous Drafts . . . . . . . . . . . .  27
      B.1.  From draft-mandyam-rats-eat-00  . . . . . . . . . . . . .  27
-   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .  27
+     B.2.  From draft-ietf-rats-eat-01 . . . . . . . . . . . . . . .  27
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .  28
 
 1.  Introduction
 
@@ -161,7 +162,6 @@ Internet-Draft                     EAT                      January 2020
    authentication where the biometric matching is done on the device.
    The relying party needs to know that the device is one that is known
    to do biometric matching correctly.  Another example is content
-   protection where the relying party wants to know the device will
 
 
 
@@ -170,6 +170,7 @@ Mandyam, et al.            Expires 9 July 2020                  [Page 3]
 Internet-Draft                     EAT                      January 2020
 
 
+   protection where the relying party wants to know the device will
    protect the data.  This generalizes on to corporate enterprises that
    might want to know that a device is trustworthy before allowing
    corporate data to be accessed by it.
@@ -217,7 +218,6 @@ Internet-Draft                     EAT                      January 2020
    Modern devices such as a mobile phone have many different execution
    environments operating with different security levels.  For example,
    it is common for a mobile phone to have an "apps" environment that
-   runs an operating system (OS) that hosts a plethora of downloadable
 
 
 
@@ -226,6 +226,7 @@ Mandyam, et al.            Expires 9 July 2020                  [Page 4]
 Internet-Draft                     EAT                      January 2020
 
 
+   runs an operating system (OS) that hosts a plethora of downloadable
    apps.  It may also have a TEE (Trusted Execution Environment) that is
    distinct, isolated, and hosts security-oriented functionality like
    biometric authentication.  Additionally, it may have an eSE (embedded
@@ -272,8 +273,7 @@ Internet-Draft                     EAT                      January 2020
       manufacturer.  The relying party performs the verification.
 
    *  The EAT is transmitted to the relying party.  The relying party
-      transmits the EAT to a verification service offered by the
-      manufacturer.  The server returns the validated claims.
+
 
 
 
@@ -281,6 +281,9 @@ Mandyam, et al.            Expires 9 July 2020                  [Page 5]
 
 Internet-Draft                     EAT                      January 2020
 
+
+      transmits the EAT to a verification service offered by the
+      manufacturer.  The server returns the validated claims.
 
    *  The EAT is transmitted directly to a verification service, perhaps
       operated by the manufacturer or perhaps by another party.  It
@@ -323,9 +326,6 @@ Internet-Draft                     EAT                      January 2020
    if the EAT is conveyed through intermediaries between the device and
    Relying Party, such intermediaries cannot easily modify the EAT
    payload or alter the signature.
-
-
-
 
 
 
@@ -1504,7 +1504,7 @@ B.1.  From draft-mandyam-rats-eat-00
 
    *  Use a map to structure the boot_state and location claims
 
-Authors' Addresses
+B.2.  From draft-ietf-rats-eat-01
 
 
 
@@ -1513,6 +1513,14 @@ Mandyam, et al.            Expires 9 July 2020                 [Page 27]
 
 Internet-Draft                     EAT                      January 2020
 
+
+   *  Clarifications and corrections for OEMID claim
+
+   *  Minor spelling and other fixes
+
+   *  Add the nonce claim, clarify jti claim
+
+Authors' Addresses
 
    Giridhar Mandyam
    Qualcomm Technologies Inc.
@@ -1549,14 +1557,6 @@ Internet-Draft                     EAT                      January 2020
 
    Phone: +44 1252 363189
    Email: jodonogh@qti.qualcomm.com
-
-
-
-
-
-
-
-
 
 
 
