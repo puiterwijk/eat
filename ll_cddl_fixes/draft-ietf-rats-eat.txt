@@ -1781,11 +1781,11 @@ C.4.  From draft-ietf-rats-eat-02
    *  Submods part now includes nested eat tokens so they can be named
       and there can be more tha one of them
 
+   *  Lots of fixes to the CDDL
+
 Authors' Addresses
 
-   Giridhar Mandyam
-   Qualcomm Technologies Inc.
-   5775 Morehouse Drive
+
 
 
 
@@ -1794,6 +1794,9 @@ Mandyam, et al.          Expires 16 August 2020                [Page 32]
 Internet-Draft                     EAT                     February 2020
 
 
+   Giridhar Mandyam
+   Qualcomm Technologies Inc.
+   5775 Morehouse Drive
    San Diego, California
    United States of America
 
@@ -1826,9 +1829,6 @@ Internet-Draft                     EAT                     February 2020
 
    Phone: +44 1252 363189
    Email: jodonogh@qti.qualcomm.com
-
-
-
 
 
 
