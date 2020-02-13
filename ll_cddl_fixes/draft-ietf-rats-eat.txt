@@ -153,8 +153,8 @@ Internet-Draft                     EAT                     February 2020
      C.1.  From draft-rats-eat-01  . . . . . . . . . . . . . . . . .  32
      C.2.  From draft-mandyam-rats-eat-00  . . . . . . . . . . . . .  32
      C.3.  From draft-ietf-rats-eat-01 . . . . . . . . . . . . . . .  32
+     C.4.  From draft-ietf-rats-eat-02 . . . . . . . . . . . . . . .  32
    Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .  32
-
 
 
 
@@ -1770,11 +1770,30 @@ C.3.  From draft-ietf-rats-eat-01
 
    *  Add the nonce claim, clarify jti claim
 
+C.4.  From draft-ietf-rats-eat-02
+
+   *  Roll all EUIs back into one UEID type
+
+   *  UEIDs can be one of three lengths, 128, 192 and 256.
+
+   *  Added appendix justifying UEID design and size.
+
+   *  Submods part now includes nested eat tokens so they can be named
+      and there can be more tha one of them
+
 Authors' Addresses
 
    Giridhar Mandyam
    Qualcomm Technologies Inc.
    5775 Morehouse Drive
+
+
+
+Mandyam, et al.          Expires 16 August 2020                [Page 32]
+
+Internet-Draft                     EAT                     February 2020
+
+
    San Diego, California
    United States of America
 
@@ -1786,12 +1805,6 @@ Authors' Addresses
    Security Theory LLC
 
    Email: lgl@island-resort.com
-
-
-
-Mandyam, et al.          Expires 16 August 2020                [Page 32]
-
-Internet-Draft                     EAT                     February 2020
 
 
    Miguel Ballesteros
@@ -1813,19 +1826,6 @@ Internet-Draft                     EAT                     February 2020
 
    Phone: +44 1252 363189
    Email: jodonogh@qti.qualcomm.com
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
