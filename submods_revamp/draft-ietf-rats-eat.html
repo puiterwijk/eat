@@ -2027,7 +2027,7 @@ the boot claim which does have inheritance as currently described).<a href="#sec
 <a href="#section-3.12.3" class="section-number selfRef">3.12.3. </a><a href="#name-security-levels" class="section-name selfRef">Security Levels</a>
           </h4>
 <p id="section-3.12.3-1">The security level of the non-token subordinate modules should always
-be less than that of the containing modules in the case of non-token
+be less than or equal to that of the containing modules in the case of non-token
 submodules. It makes no sense for a module of lesser security to be
 signing claims of a module of higher security. An example of this is a
 TEE signing claims made by the non-TEE parts (e.g. the high-level OS)
