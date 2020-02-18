@@ -828,7 +828,7 @@ table.left {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Mandyam, et al.</td>
-<td class="center">Expires 16 August 2020</td>
+<td class="center">Expires 21 August 2020</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -841,12 +841,12 @@ table.left {
 <dd class="internet-draft">draft-ietf-rats-eat-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2020-02-13" class="published">13 February 2020</time>
+<time datetime="2020-02-18" class="published">18 February 2020</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2020-08-16">16 August 2020</time></dd>
+<dd class="expires"><time datetime="2020-08-21">21 August 2020</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -904,7 +904,7 @@ CWT and JWT.<a href="#section-abstract-2" class="pilcrow">¶</a></p>
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 16 August 2020.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 21 August 2020.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1467,7 +1467,7 @@ important for EAT.<a href="#section-3-1" class="pilcrow">¶</a></p>
 <li id="section-3-3.3">All claims that are not understood by implementations MUST be ignored<a href="#section-3-3.3" class="pilcrow">¶</a>
 </li>
 </ul>
-<p id="section-3-4">CDDL along with text descriptions is used to defineeach claim indepdent of encoding.
+<p id="section-3-4">CDDL along with text descriptions is used to define each claim indepdent of encoding.
 Each claim is defined as a CDDL group (the group is a general
 aggregation and type definition feature of CDDL). In the encoding section
 <a href="#encoding" class="xref">Section 4</a>, the CDDL groups turn into CBOR map
@@ -1620,7 +1620,7 @@ that UEIDs be universally unique.<a href="#section-3.4-10.3" class="pilcrow">¶<
           </h4>
 <p id="section-3.4.1-1">~~~~CDDL
 ueid-claim = (
-     ueid: bstr .size (7..33)
+     ueid =&gt; bstr .size (7..33)
 )
 ~~~~<a href="#section-3.4.1-1" class="pilcrow">¶</a></p>
 </section>
@@ -1674,7 +1674,7 @@ in CWT in that it describes the authority that created the token.<a href="#secti
 <div class="artwork art-text alignLeft art-CDDL" id="section-3.5.1-1">
 <pre>
 origination-claim = (
-    origination: string-or-uri
+    origination =&gt; string-or-uri
 )
 </pre><a href="#section-3.5.1-1" class="pilcrow">¶</a>
 </div>
@@ -1714,7 +1714,7 @@ tokens, this is further base64url encoded.<a href="#section-3.6-3" class="pilcro
 <div class="artwork art-text alignLeft art-CDDL" id="section-3.6.1-1">
 <pre>
 oemid-claim = (
-    oemid: bstr
+    oemid =&gt; bstr
 )
 </pre><a href="#section-3.6.1-1" class="pilcrow">¶</a>
 </div>
@@ -1865,11 +1865,11 @@ cannot be restored once blown.<a href="#section-3.8.5-1" class="pilcrow">¶</a><
 <div class="artwork art-text alignLeft art-CDDL" id="section-3.8.6-1">
 <pre>
 boot-state-type = [
-    secure-boot-enabled: bool,
-    debug-disabled: bool,
-    debug-disabled-since-boot: bool,
-    debug-permanent-disable: bool,
-    debug-full-permanent-disable: bool
+    secure-boot-enabled =&gt; bool,
+    debug-disabled =&gt; bool,
+    debug-disabled-since-boot =&gt; bool,
+    debug-permanent-disable =&gt; bool,
+    debug-full-permanent-disable =&gt; bool
 ]
 
 boot-state-claim = (
@@ -1911,7 +1911,7 @@ location-type = {
 }
 
 location-claim = (
-    location=&gt; location-type
+    location =&gt; location-type
 )
 </pre><a href="#section-3.9.1-1" class="pilcrow">¶</a>
 </div>
@@ -2164,7 +2164,7 @@ uptime = "uptime"
 nested-eat = "nested-eat"
 submods = "submods"
 
-latitude = "lat""
+latitude = "lat"
 longitude = "long""
 altitude = "alt"
 accuracy = "accry"
