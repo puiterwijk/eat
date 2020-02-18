@@ -1,6 +1,204 @@
 [
 
   {
+    "url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/53",
+    "repository_url": "https://api.github.com/repos/ietf-rats-wg/eat",
+    "labels_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/53/labels{/name}",
+    "comments_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/53/comments",
+    "events_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/53/events",
+    "html_url": "https://github.com/ietf-rats-wg/eat/issues/53",
+    "id": 564699475,
+    "node_id": "MDU6SXNzdWU1NjQ2OTk0NzU=",
+    "number": 53,
+    "title": "Sort out CWT and COSE tag usage",
+    "user": {
+      "login": "laurencelundblade",
+      "id": 7951515,
+      "node_id": "MDQ6VXNlcjc5NTE1MTU=",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/7951515?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/laurencelundblade",
+      "html_url": "https://github.com/laurencelundblade",
+      "followers_url": "https://api.github.com/users/laurencelundblade/followers",
+      "following_url": "https://api.github.com/users/laurencelundblade/following{/other_user}",
+      "gists_url": "https://api.github.com/users/laurencelundblade/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/laurencelundblade/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/laurencelundblade/subscriptions",
+      "organizations_url": "https://api.github.com/users/laurencelundblade/orgs",
+      "repos_url": "https://api.github.com/users/laurencelundblade/repos",
+      "events_url": "https://api.github.com/users/laurencelundblade/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/laurencelundblade/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-02-13T13:56:06Z",
+    "updated_at": "2020-02-13T13:56:06Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "body": "When should the CWT and COSE tags be used with an EAT?"
+  },
+  {
+    "url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/52",
+    "repository_url": "https://api.github.com/repos/ietf-rats-wg/eat",
+    "labels_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/52/labels{/name}",
+    "comments_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/52/comments",
+    "events_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/52/events",
+    "html_url": "https://github.com/ietf-rats-wg/eat/pull/52",
+    "id": 564698274,
+    "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc0ODgwNzY5",
+    "number": 52,
+    "title": "Lots of CDDL fixes",
+    "user": {
+      "login": "laurencelundblade",
+      "id": 7951515,
+      "node_id": "MDQ6VXNlcjc5NTE1MTU=",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/7951515?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/laurencelundblade",
+      "html_url": "https://github.com/laurencelundblade",
+      "followers_url": "https://api.github.com/users/laurencelundblade/followers",
+      "following_url": "https://api.github.com/users/laurencelundblade/following{/other_user}",
+      "gists_url": "https://api.github.com/users/laurencelundblade/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/laurencelundblade/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/laurencelundblade/subscriptions",
+      "organizations_url": "https://api.github.com/users/laurencelundblade/orgs",
+      "repos_url": "https://api.github.com/users/laurencelundblade/repos",
+      "events_url": "https://api.github.com/users/laurencelundblade/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/laurencelundblade/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-02-13T13:54:03Z",
+    "updated_at": "2020-02-18T11:18:16Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "pull_request": {
+      "url": "https://api.github.com/repos/ietf-rats-wg/eat/pulls/52",
+      "html_url": "https://github.com/ietf-rats-wg/eat/pull/52",
+      "diff_url": "https://github.com/ietf-rats-wg/eat/pull/52.diff",
+      "patch_url": "https://github.com/ietf-rats-wg/eat/pull/52.patch"
+    },
+    "body": ""
+  },
+  {
+    "url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/51",
+    "repository_url": "https://api.github.com/repos/ietf-rats-wg/eat",
+    "labels_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/51/labels{/name}",
+    "comments_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/51/comments",
+    "events_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/51/events",
+    "html_url": "https://github.com/ietf-rats-wg/eat/issues/51",
+    "id": 564666939,
+    "node_id": "MDU6SXNzdWU1NjQ2NjY5Mzk=",
+    "number": 51,
+    "title": "Should issuer, subject and audience claims allow URI tag?",
+    "user": {
+      "login": "laurencelundblade",
+      "id": 7951515,
+      "node_id": "MDQ6VXNlcjc5NTE1MTU=",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/7951515?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/laurencelundblade",
+      "html_url": "https://github.com/laurencelundblade",
+      "followers_url": "https://api.github.com/users/laurencelundblade/followers",
+      "following_url": "https://api.github.com/users/laurencelundblade/following{/other_user}",
+      "gists_url": "https://api.github.com/users/laurencelundblade/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/laurencelundblade/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/laurencelundblade/subscriptions",
+      "organizations_url": "https://api.github.com/users/laurencelundblade/orgs",
+      "repos_url": "https://api.github.com/users/laurencelundblade/repos",
+      "events_url": "https://api.github.com/users/laurencelundblade/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/laurencelundblade/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-02-13T13:00:19Z",
+    "updated_at": "2020-02-13T13:00:19Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "body": "RFC8392 doesn't say whether the URI tag #6.32 should or should not be used on the issuer, subject and audience claims. Without it the decoder would use a URI syntax matcher to decide between it being text or a URI."
+  },
+  {
+    "url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/50",
+    "repository_url": "https://api.github.com/repos/ietf-rats-wg/eat",
+    "labels_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/50/labels{/name}",
+    "comments_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/50/comments",
+    "events_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/50/events",
+    "html_url": "https://github.com/ietf-rats-wg/eat/issues/50",
+    "id": 564655066,
+    "node_id": "MDU6SXNzdWU1NjQ2NTUwNjY=",
+    "number": 50,
+    "title": "Are latitude and longitude optional in location claim?",
+    "user": {
+      "login": "laurencelundblade",
+      "id": 7951515,
+      "node_id": "MDQ6VXNlcjc5NTE1MTU=",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/7951515?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/laurencelundblade",
+      "html_url": "https://github.com/laurencelundblade",
+      "followers_url": "https://api.github.com/users/laurencelundblade/followers",
+      "following_url": "https://api.github.com/users/laurencelundblade/following{/other_user}",
+      "gists_url": "https://api.github.com/users/laurencelundblade/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/laurencelundblade/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/laurencelundblade/subscriptions",
+      "organizations_url": "https://api.github.com/users/laurencelundblade/orgs",
+      "repos_url": "https://api.github.com/users/laurencelundblade/repos",
+      "events_url": "https://api.github.com/users/laurencelundblade/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/laurencelundblade/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2020-02-13T12:37:39Z",
+    "updated_at": "2020-02-13T12:37:39Z",
+    "closed_at": null,
+    "author_association": "COLLABORATOR",
+    "body": "Clearly most part of the location claim are optional. For example you don't have to specify speed.  Should latitude and longitude also be optional? Can you just specify altitude if you want to?\r\n"
+  },
+  {
     "url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/49",
     "repository_url": "https://api.github.com/repos/ietf-rats-wg/eat",
     "labels_url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/49/labels{/name}",
@@ -334,7 +532,7 @@
     "labels": [
 
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignee": null,
     "assignees": [
@@ -343,8 +541,8 @@
     "milestone": null,
     "comments": 9,
     "created_at": "2019-11-01T03:14:44Z",
-    "updated_at": "2020-02-13T11:06:24Z",
-    "closed_at": null,
+    "updated_at": "2020-02-13T11:15:54Z",
+    "closed_at": "2020-02-13T11:15:54Z",
     "author_association": "COLLABORATOR",
     "pull_request": {
       "url": "https://api.github.com/repos/ietf-rats-wg/eat/pulls/43",
@@ -1349,7 +1547,10 @@
     "closed_at": null,
     "author_association": "NONE",
     "body": "It isn't clear whether an key used for attestation is restricted to signing evidence that is controlled by a trusted environment. The risk of not having constraints is the key may be subject to a confused deputy attack where claims are presented as opaque data that then receive a signature and a verifier presumes the attester made the claims. \r\n\r\nShould it be mandatory for EAT claims to reside within the security perimeter of a trusted environment such as a TEEP TEE / TEEP Agent?"
-  },
+  }
+
+,
+
   {
     "url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/23",
     "repository_url": "https://api.github.com/repos/ietf-rats-wg/eat",
@@ -1549,10 +1750,7 @@
     "closed_at": "2019-07-22T17:52:36Z",
     "author_association": "COLLABORATOR",
     "body": "They can be addressed in a -02 version.\r\n\r\nSec. 3:  Change \"\"It also mentions several claims defined by CWT and JWT are  particularly important for EAT.\" to 'that are particularly important'\r\n\r\nSec. 3:  Correct \"* All claims are optional * No claims are mandatory *.\"  Redundant.\r\n\r\nSec. 3.11:  \"Typically, one will be the device-wide EAT that is low to medium  security and another from a Secure Element or similar that is high security.”  Consider changing \"Typically\" to \"For example\".\r\n\r\nSec. 3.11:  \"The contents of the \"eat\" claim must be a fully signed, ...\".  \"eat\" claim should be \"nested_eat\" claim. "
-  }
-
-,
-
+  },
   {
     "url": "https://api.github.com/repos/ietf-rats-wg/eat/issues/19",
     "repository_url": "https://api.github.com/repos/ietf-rats-wg/eat",
